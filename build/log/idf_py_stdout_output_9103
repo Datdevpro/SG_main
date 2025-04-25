@@ -1,0 +1,45 @@
+-- Found Git: /usr/bin/git (found version "2.34.1") 
+-- Component directory /home/lee/work/CP/esp/esp-idf/components/esp_coex does not contain a CMakeLists.txt file. No component will be added
+-- The C compiler identification is GNU 11.2.0
+-- The CXX compiler identification is GNU 11.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/lee/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/lee/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/lee/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32s3
+NOTICE: Processing 1 dependencies:
+NOTICE: [1/1] idf (5.0.0)
+-- Project sdkconfig file /home/lee/work/CP/snore-recognition/sdkconfig
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Found Python3: /home/lee/.espressif/python_env/idf5.0_py3.10_env/bin/python (found version "3.10.12") found components: Interpreter 
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "snore-recognition" version: 56ebb89-dirty
+-- Adding linker script /home/lee/work/CP/snore-recognition/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/lee/work/CP/esp/esp-idf/components/esp_system/ld/esp32s3/sections.ld.in
+-- Adding linker script /home/lee/work/CP/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /home/lee/work/CP/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /home/lee/work/CP/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /home/lee/work/CP/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /home/lee/work/CP/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script /home/lee/work/CP/esp/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt bus cmock console cxx driver efuse esp-nn esp-tls esp32-camera esp_adc esp_app_format esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_netif esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs fb_gfx freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread screen sdmmc soc spi_flash spiffs tcp_transport tflite-lib touch_element ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/lee/work/CP/esp/esp-idf/components/app_trace /home/lee/work/CP/esp/esp-idf/components/app_update /home/lee/work/CP/esp/esp-idf/components/bootloader /home/lee/work/CP/esp/esp-idf/components/bootloader_support /home/lee/work/CP/esp/esp-idf/components/bt /home/lee/work/CP/snore-recognition/components/bus /home/lee/work/CP/esp/esp-idf/components/cmock /home/lee/work/CP/esp/esp-idf/components/console /home/lee/work/CP/esp/esp-idf/components/cxx /home/lee/work/CP/esp/esp-idf/components/driver /home/lee/work/CP/esp/esp-idf/components/efuse /home/lee/work/CP/snore-recognition/components/esp-nn /home/lee/work/CP/esp/esp-idf/components/esp-tls /home/lee/work/CP/snore-recognition/components/esp32-camera /home/lee/work/CP/esp/esp-idf/components/esp_adc /home/lee/work/CP/esp/esp-idf/components/esp_app_format /home/lee/work/CP/esp/esp-idf/components/esp_common /home/lee/work/CP/esp/esp-idf/components/esp_eth /home/lee/work/CP/esp/esp-idf/components/esp_event /home/lee/work/CP/esp/esp-idf/components/esp_gdbstub /home/lee/work/CP/esp/esp-idf/components/esp_hid /home/lee/work/CP/esp/esp-idf/components/esp_http_client /home/lee/work/CP/esp/esp-idf/components/esp_http_server /home/lee/work/CP/esp/esp-idf/components/esp_https_ota /home/lee/work/CP/esp/esp-idf/components/esp_https_server /home/lee/work/CP/esp/esp-idf/components/esp_hw_support /home/lee/work/CP/esp/esp-idf/components/esp_lcd /home/lee/work/CP/esp/esp-idf/components/esp_local_ctrl /home/lee/work/CP/esp/esp-idf/components/esp_netif /home/lee/work/CP/esp/esp-idf/components/esp_partition /home/lee/work/CP/esp/esp-idf/components/esp_phy /home/lee/work/CP/esp/esp-idf/components/esp_pm /home/lee/work/CP/esp/esp-idf/components/esp_psram /home/lee/work/CP/esp/esp-idf/components/esp_ringbuf /home/lee/work/CP/esp/esp-idf/components/esp_rom /home/lee/work/CP/esp/esp-idf/components/esp_system /home/lee/work/CP/esp/esp-idf/components/esp_timer /home/lee/work/CP/esp/esp-idf/components/esp_wifi /home/lee/work/CP/esp/esp-idf/components/espcoredump /home/lee/work/CP/esp/esp-idf/components/esptool_py /home/lee/work/CP/esp/esp-idf/components/fatfs /home/lee/work/CP/snore-recognition/components/fb_gfx /home/lee/work/CP/esp/esp-idf/components/freertos /home/lee/work/CP/esp/esp-idf/components/hal /home/lee/work/CP/esp/esp-idf/components/heap /home/lee/work/CP/esp/esp-idf/components/http_parser /home/lee/work/CP/esp/esp-idf/components/idf_test /home/lee/work/CP/esp/esp-idf/components/ieee802154 /home/lee/work/CP/esp/esp-idf/components/json /home/lee/work/CP/esp/esp-idf/components/log /home/lee/work/CP/esp/esp-idf/components/lwip /home/lee/work/CP/snore-recognition/main /home/lee/work/CP/esp/esp-idf/components/mbedtls /home/lee/work/CP/esp/esp-idf/components/mqtt /home/lee/work/CP/esp/esp-idf/components/newlib /home/lee/work/CP/esp/esp-idf/components/nvs_flash /home/lee/work/CP/esp/esp-idf/components/openthread /home/lee/work/CP/esp/esp-idf/components/partition_table /home/lee/work/CP/esp/esp-idf/components/perfmon /home/lee/work/CP/esp/esp-idf/components/protobuf-c /home/lee/work/CP/esp/esp-idf/components/protocomm /home/lee/work/CP/esp/esp-idf/components/pthread /home/lee/work/CP/snore-recognition/components/screen /home/lee/work/CP/esp/esp-idf/components/sdmmc /home/lee/work/CP/esp/esp-idf/components/soc /home/lee/work/CP/esp/esp-idf/components/spi_flash /home/lee/work/CP/esp/esp-idf/components/spiffs /home/lee/work/CP/esp/esp-idf/components/tcp_transport /home/lee/work/CP/snore-recognition/components/tflite-lib /home/lee/work/CP/esp/esp-idf/components/touch_element /home/lee/work/CP/esp/esp-idf/components/ulp /home/lee/work/CP/esp/esp-idf/components/unity /home/lee/work/CP/esp/esp-idf/components/usb /home/lee/work/CP/esp/esp-idf/components/vfs /home/lee/work/CP/esp/esp-idf/components/wear_levelling /home/lee/work/CP/esp/esp-idf/components/wifi_provisioning /home/lee/work/CP/esp/esp-idf/components/wpa_supplicant /home/lee/work/CP/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lee/work/CP/snore-recognition/build

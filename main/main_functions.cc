@@ -14,7 +14,7 @@ limitations under the License.
 ==============================================================================*/
 
 #include "main_functions.h"
-
+#include "data_sender.h"
 #include "audio_provider.h"
 #include "command_responder.h"
 #include "feature_provider.h"
@@ -49,6 +49,7 @@ uint8_t* model_input_buffer = nullptr;
 void setup() {
   // Map the model into a usable data structure. This doesn't involve any
   // copying or parsing, it's a very lightweight operation.
+  uart_init();
   model = tflite::GetModel(g_model);
   if (model->version() != TFLITE_SCHEMA_VERSION) {
     MicroPrintf("Model provided is schema version %d not equal to supported "

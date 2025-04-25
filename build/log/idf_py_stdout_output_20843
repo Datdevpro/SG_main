@@ -1,0 +1,109 @@
+[0/1] Re-running CMake...
+-- Component directory /home/lee/work/CP/esp/esp-idf/components/esp_coex does not contain a CMakeLists.txt file. No component will be added
+-- Building ESP-IDF components for target esp32s3
+NOTICE: Processing 1 dependencies:
+NOTICE: [1/1] idf (5.0.0)
+-- Project sdkconfig file /home/lee/work/CP/snore-recognition/sdkconfig
+-- App "snore-recognition" version: 56ebb89-dirty
+-- Adding linker script /home/lee/work/CP/snore-recognition/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/lee/work/CP/esp/esp-idf/components/esp_system/ld/esp32s3/sections.ld.in
+-- Adding linker script /home/lee/work/CP/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /home/lee/work/CP/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /home/lee/work/CP/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /home/lee/work/CP/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /home/lee/work/CP/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script /home/lee/work/CP/esp/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt bus cmock console cxx driver efuse esp-nn esp-tls esp32-camera esp_adc esp_app_format esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_netif esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs fb_gfx freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread screen sdmmc soc spi_flash spiffs tcp_transport tflite-lib touch_element ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/lee/work/CP/esp/esp-idf/components/app_trace /home/lee/work/CP/esp/esp-idf/components/app_update /home/lee/work/CP/esp/esp-idf/components/bootloader /home/lee/work/CP/esp/esp-idf/components/bootloader_support /home/lee/work/CP/esp/esp-idf/components/bt /home/lee/work/CP/snore-recognition/components/bus /home/lee/work/CP/esp/esp-idf/components/cmock /home/lee/work/CP/esp/esp-idf/components/console /home/lee/work/CP/esp/esp-idf/components/cxx /home/lee/work/CP/esp/esp-idf/components/driver /home/lee/work/CP/esp/esp-idf/components/efuse /home/lee/work/CP/snore-recognition/components/esp-nn /home/lee/work/CP/esp/esp-idf/components/esp-tls /home/lee/work/CP/snore-recognition/components/esp32-camera /home/lee/work/CP/esp/esp-idf/components/esp_adc /home/lee/work/CP/esp/esp-idf/components/esp_app_format /home/lee/work/CP/esp/esp-idf/components/esp_common /home/lee/work/CP/esp/esp-idf/components/esp_eth /home/lee/work/CP/esp/esp-idf/components/esp_event /home/lee/work/CP/esp/esp-idf/components/esp_gdbstub /home/lee/work/CP/esp/esp-idf/components/esp_hid /home/lee/work/CP/esp/esp-idf/components/esp_http_client /home/lee/work/CP/esp/esp-idf/components/esp_http_server /home/lee/work/CP/esp/esp-idf/components/esp_https_ota /home/lee/work/CP/esp/esp-idf/components/esp_https_server /home/lee/work/CP/esp/esp-idf/components/esp_hw_support /home/lee/work/CP/esp/esp-idf/components/esp_lcd /home/lee/work/CP/esp/esp-idf/components/esp_local_ctrl /home/lee/work/CP/esp/esp-idf/components/esp_netif /home/lee/work/CP/esp/esp-idf/components/esp_partition /home/lee/work/CP/esp/esp-idf/components/esp_phy /home/lee/work/CP/esp/esp-idf/components/esp_pm /home/lee/work/CP/esp/esp-idf/components/esp_psram /home/lee/work/CP/esp/esp-idf/components/esp_ringbuf /home/lee/work/CP/esp/esp-idf/components/esp_rom /home/lee/work/CP/esp/esp-idf/components/esp_system /home/lee/work/CP/esp/esp-idf/components/esp_timer /home/lee/work/CP/esp/esp-idf/components/esp_wifi /home/lee/work/CP/esp/esp-idf/components/espcoredump /home/lee/work/CP/esp/esp-idf/components/esptool_py /home/lee/work/CP/esp/esp-idf/components/fatfs /home/lee/work/CP/snore-recognition/components/fb_gfx /home/lee/work/CP/esp/esp-idf/components/freertos /home/lee/work/CP/esp/esp-idf/components/hal /home/lee/work/CP/esp/esp-idf/components/heap /home/lee/work/CP/esp/esp-idf/components/http_parser /home/lee/work/CP/esp/esp-idf/components/idf_test /home/lee/work/CP/esp/esp-idf/components/ieee802154 /home/lee/work/CP/esp/esp-idf/components/json /home/lee/work/CP/esp/esp-idf/components/log /home/lee/work/CP/esp/esp-idf/components/lwip /home/lee/work/CP/snore-recognition/main /home/lee/work/CP/esp/esp-idf/components/mbedtls /home/lee/work/CP/esp/esp-idf/components/mqtt /home/lee/work/CP/esp/esp-idf/components/newlib /home/lee/work/CP/esp/esp-idf/components/nvs_flash /home/lee/work/CP/esp/esp-idf/components/openthread /home/lee/work/CP/esp/esp-idf/components/partition_table /home/lee/work/CP/esp/esp-idf/components/perfmon /home/lee/work/CP/esp/esp-idf/components/protobuf-c /home/lee/work/CP/esp/esp-idf/components/protocomm /home/lee/work/CP/esp/esp-idf/components/pthread /home/lee/work/CP/snore-recognition/components/screen /home/lee/work/CP/esp/esp-idf/components/sdmmc /home/lee/work/CP/esp/esp-idf/components/soc /home/lee/work/CP/esp/esp-idf/components/spi_flash /home/lee/work/CP/esp/esp-idf/components/spiffs /home/lee/work/CP/esp/esp-idf/components/tcp_transport /home/lee/work/CP/snore-recognition/components/tflite-lib /home/lee/work/CP/esp/esp-idf/components/touch_element /home/lee/work/CP/esp/esp-idf/components/ulp /home/lee/work/CP/esp/esp-idf/components/unity /home/lee/work/CP/esp/esp-idf/components/usb /home/lee/work/CP/esp/esp-idf/components/vfs /home/lee/work/CP/esp/esp-idf/components/wear_levelling /home/lee/work/CP/esp/esp-idf/components/wifi_provisioning /home/lee/work/CP/esp/esp-idf/components/wpa_supplicant /home/lee/work/CP/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lee/work/CP/snore-recognition/build
+[1/11] Performing build step for 'bootloader'
+[1/1] cd /home/lee/work/CP/snore-recognition/build/bootloader/esp-idf/esptool_py && /home/lee/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/lee/work/CP/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/lee/work/CP/snore-recognition/build/bootloader/bootloader.bin
+Bootloader binary size 0x5150 bytes. 0x2eb0 bytes (36%) free.
+[2/9] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/model.cc.obj
+[3/9] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main_functions.cc.obj
+In file included from /home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/micro/tflite_bridge/flatbuffer_conversions_bridge.h:19,
+                 from /home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/micro/micro_allocator.h:26,
+                 from /home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/micro/micro_interpreter.h:26,
+                 from /home/lee/work/CP/snore-recognition/main/main_functions.cc:24:
+/home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/core/api/flatbuffer_conversions.h: In member function 'T* tflite::BuiltinDataAllocator::AllocatePOD()':
+/home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/core/api/flatbuffer_conversions.h:46:24: warning: 'template<class _Tp> struct std::is_pod' is deprecated: use is_standard_layout && is_trivial instead [-Wdeprecated-declarations]
+   46 |     static_assert(std::is_pod<T>::value, "Builtin data structure must be POD.");
+      |                        ^~~~~~
+In file included from /home/lee/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/xtensa-esp32s3-elf/include/c++/11.2.0/bits/move.h:57,
+                 from /home/lee/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/xtensa-esp32s3-elf/include/c++/11.2.0/bits/stl_pair.h:59,
+                 from /home/lee/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/xtensa-esp32s3-elf/include/c++/11.2.0/utility:70,
+                 from /home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/core/c/common.h:1208,
+                 from /home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/c/common.h:39,
+                 from /home/lee/work/CP/snore-recognition/main/audio_provider.h:19,
+                 from /home/lee/work/CP/snore-recognition/main/main_functions.cc:18:
+/home/lee/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/xtensa-esp32s3-elf/include/c++/11.2.0/type_traits:700:5: note: declared here
+  700 |     is_pod
+      |     ^~~~~~
+[4/9] Linking C static library esp-idf/main/libmain.a
+[5/9] Generating ld/sections.ld
+[6/9] Linking CXX executable snore-recognition.elf
+[7/9] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/lee/work/CP/snore-recognition/build/snore-recognition.bin
+[8/9] cd /home/lee/work/CP/snore-recognition/build/esp-idf/esptool_py && /home/lee/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/lee/work/CP/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/lee/work/CP/snore-recognition/build/partition_table/partition-table.bin /home/lee/work/CP/snore-recognition/build/snore-recognition.bin
+snore-recognition.bin binary size 0x7eeb0 bytes. Smallest app partition is 0x177000 bytes. 0xf8150 bytes (66%) free.
+[8/9] cd /home/lee/work/CP/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/lee/work/CP/esp/esp-idf -D "SERIAL_TOOL=/home/lee/.espressif/python_env/idf5.0_py3.10_env/bin/python;;/home/lee/work/CP/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/lee/work/CP/snore-recognition/build -P /home/lee/work/CP/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 8MB 0x0 bootloader/bootloader.bin 0x10000 snore-recognition.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port /dev/ttyACM0
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: 30:30:f9:53:aa:20
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x0008efff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 20816 bytes to 13273...
+Writing at 0x00000000... (100 %)
+Wrote 20816 bytes (13273 compressed) at 0x00000000 in 0.3 seconds (effective 525.6 kbit/s)...
+Hash of data verified.
+Compressed 519856 bytes to 362050...
+Writing at 0x00010000... (4 %)
+Writing at 0x00017d62... (8 %)
+Writing at 0x0001bdea... (13 %)
+Writing at 0x0001ffa7... (17 %)
+Writing at 0x00024128... (21 %)
+Writing at 0x00028301... (26 %)
+Writing at 0x0002c4fa... (30 %)
+Writing at 0x00030943... (34 %)
+Writing at 0x00034d16... (39 %)
+Writing at 0x000390f6... (43 %)
+Writing at 0x0003d875... (47 %)
+Writing at 0x0004a54a... (52 %)
+Writing at 0x00050ba8... (56 %)
+Writing at 0x00056cbb... (60 %)
+Writing at 0x0005c375... (65 %)
+Writing at 0x0006144b... (69 %)
+Writing at 0x000665e6... (73 %)
+Writing at 0x0006b54a... (78 %)
+Writing at 0x00071c26... (82 %)
+Writing at 0x0007765c... (86 %)
+Writing at 0x00080e6b... (91 %)
+Writing at 0x000881ae... (95 %)
+Writing at 0x0008e306... (100 %)
+Wrote 519856 bytes (362050 compressed) at 0x00010000 in 3.9 seconds (effective 1072.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.0 seconds (effective 613.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

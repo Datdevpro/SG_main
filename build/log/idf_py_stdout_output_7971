@@ -1,0 +1,401 @@
+[1/227] Performing build step for 'bootloader'
+[1/1] cd /home/lee/work/CP/snore-recognition/build/bootloader/esp-idf/esptool_py && /home/lee/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/lee/work/CP/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/lee/work/CP/snore-recognition/build/bootloader/bootloader.bin
+Bootloader binary size 0x5150 bytes. 0x2eb0 bytes (36%) free.
+[2/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/micro_allocator.cc.obj
+[3/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/micro_log.cc.obj
+[4/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/micro_graph.cc.obj
+[5/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/micro_profiler.cc.obj
+[6/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/memory_helpers.cc.obj
+[7/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/micro_context.cc.obj
+[8/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/flatbuffer_utils.cc.obj
+[9/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/mirror_pad.cc.obj
+[10/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/fake_micro_context.cc.obj
+[11/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/system_setup.cc.obj
+[12/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/pad.cc.obj
+[13/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/micro_allocation_info.cc.obj
+[14/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/micro_interpreter.cc.obj
+[15/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/micro_resource_variable.cc.obj
+[16/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/micro_utils.cc.obj
+[17/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/micro_op_resolver.cc.obj
+[18/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/recording_micro_allocator.cc.obj
+[19/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/depth_to_space.cc.obj
+[20/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/mock_micro_graph.cc.obj
+[21/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/test_helper_custom_ops.cc.obj
+[22/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/activations.cc.obj
+[23/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/activations_common.cc.obj
+[24/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/test_helpers.cc.obj
+[25/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/add_common.cc.obj
+[26/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/arg_min_max.cc.obj
+[27/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/add_n.cc.obj
+[28/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/assign_variable.cc.obj
+[29/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/broadcast_to.cc.obj
+[30/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/broadcast_args.cc.obj
+[31/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/batch_to_space_nd.cc.obj
+[32/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/cast.cc.obj
+[33/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/call_once.cc.obj
+[34/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/ceil.cc.obj
+[35/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/circular_buffer.cc.obj
+[36/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/circular_buffer_common.cc.obj
+[37/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/depthwise_conv_common.cc.obj
+[38/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/concatenation.cc.obj
+[39/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/conv_common.cc.obj
+[40/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/div.cc.obj
+[41/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/ethosu.cc.obj
+[42/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/cumsum.cc.obj
+[43/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/elementwise.cc.obj
+[44/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/dequantize.cc.obj
+[45/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/dequantize_common.cc.obj
+[46/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/comparisons.cc.obj
+[47/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/exp.cc.obj
+[48/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/embedding_lookup.cc.obj
+[49/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/expand_dims.cc.obj
+[50/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/logical.cc.obj
+[51/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/detection_postprocess.cc.obj
+[52/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/floor.cc.obj
+[53/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/elu.cc.obj
+[54/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/fill.cc.obj
+[55/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/floor_div.cc.obj
+[56/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/floor_mod.cc.obj
+[57/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/hard_swish.cc.obj
+[58/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/gather.cc.obj
+[59/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/fully_connected_common.cc.obj
+[60/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/gather_nd.cc.obj
+[61/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/if.cc.obj
+[62/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/hard_swish_common.cc.obj
+[63/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/kernel_util.cc.obj
+[64/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/l2_pool_2d.cc.obj
+[65/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/kernel_runner.cc.obj
+[66/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/leaky_relu_common.cc.obj
+[67/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/l2norm.cc.obj
+[68/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/leaky_relu.cc.obj
+[69/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/log_softmax.cc.obj
+[70/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/lstm_eval_common.cc.obj
+[71/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/logical_common.cc.obj
+[72/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/lstm_eval.cc.obj
+[73/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/logistic.cc.obj
+[74/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/logistic_common.cc.obj
+[75/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/mul_common.cc.obj
+[76/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/maximum_minimum.cc.obj
+[77/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/unpack.cc.obj
+[78/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/pack.cc.obj
+[79/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/neg.cc.obj
+[80/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/prelu_common.cc.obj
+[81/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/pooling_common.cc.obj
+[82/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/prelu.cc.obj
+[83/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/quantize.cc.obj
+[84/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/read_variable.cc.obj
+[85/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/quantize_common.cc.obj
+[86/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/reduce.cc.obj
+[87/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/reshape.cc.obj
+[88/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/reduce_common.cc.obj
+[89/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/round.cc.obj
+[90/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/resize_nearest_neighbor.cc.obj
+[91/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/resize_bilinear.cc.obj
+[92/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/select.cc.obj
+[93/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/shape.cc.obj
+[94/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/slice.cc.obj
+[95/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/softmax_common.cc.obj
+[96/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/space_to_batch_nd.cc.obj
+[97/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/space_to_depth.cc.obj
+[98/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/squeeze.cc.obj
+[99/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/split_v.cc.obj
+[100/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/split.cc.obj
+[101/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/squared_difference.cc.obj
+[102/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/strided_slice.cc.obj
+[103/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/sub.cc.obj
+[104/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/sub_common.cc.obj
+[105/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/svdf.cc.obj
+[106/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/svdf_common.cc.obj
+[107/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/tanh.cc.obj
+[108/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/tflite_bridge/micro_error_reporter.cc.obj
+[109/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/transpose.cc.obj
+[110/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/transpose_conv.cc.obj
+[111/225] Building C object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/experimental/microfrontend/lib/filterbank.c.obj
+[112/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/unidirectional_sequence_lstm.cc.obj
+[113/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/var_handle.cc.obj
+[114/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/zeros_like.cc.obj
+[115/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/esp_nn/conv.cc.obj
+[116/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/experimental/microfrontend/lib/fft.cc.obj
+[117/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/experimental/microfrontend/lib/fft_util.cc.obj
+[118/225] Building C object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/experimental/microfrontend/lib/frontend.c.obj
+[119/225] Building C object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/experimental/microfrontend/lib/filterbank_util.c.obj
+/home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/experimental/microfrontend/lib/filterbank_util.c: In function 'FreqToMel':
+/home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/experimental/microfrontend/lib/filterbank_util.c:31:65: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+   31 | static float FreqToMel(float freq) { return 1127.0 * log1p(freq / 700.0); }
+      |                                                                 ^
+/home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/experimental/microfrontend/lib/filterbank_util.c: In function 'QuantizeFilterbankWeights':
+/home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/experimental/microfrontend/lib/filterbank_util.c:52:57: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+   52 |   *weight = floor(float_weight * (1 << kFilterbankBits) + 0.5);
+      |                                                         ^
+/home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/experimental/microfrontend/lib/filterbank_util.c:53:26: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+   53 |   *unweight = floor((1.0 - float_weight) * (1 << kFilterbankBits) + 0.5);
+      |                          ^
+/home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/experimental/microfrontend/lib/filterbank_util.c: In function 'FilterbankPopulateState':
+/home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/experimental/microfrontend/lib/filterbank_util.c:98:47: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+   98 |   const float hz_per_sbin = 0.5 * sample_rate / ((float)spectrum_size - 1);
+      |                                               ^
+/home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/experimental/microfrontend/lib/filterbank_util.c:99:28: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+   99 |   state->start_index = 1.5 + config->lower_band_limit / hz_per_sbin;
+      |                            ^
+[120/225] Building C object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/experimental/microfrontend/lib/frontend_util.c.obj
+[121/225] Building C object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/experimental/microfrontend/lib/log_lut.c.obj
+[122/225] Building C object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/experimental/microfrontend/lib/window.c.obj
+[123/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/while.cc.obj
+[124/225] Building C object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/experimental/microfrontend/lib/window_util.c.obj
+/home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/experimental/microfrontend/lib/window_util.c: In function 'WindowPopulateState':
+/home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/experimental/microfrontend/lib/window_util.c:44:32: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+   44 |   const float arg = M_PI * 2.0 / ((float)state->size);
+      |                                ^
+/home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/experimental/microfrontend/lib/window_util.c:46:17: warning: comparison of integer expressions of different signedness: 'int' and 'size_t' {aka 'unsigned int'} [-Wsign-compare]
+   46 |   for (i = 0; i < state->size; ++i) {
+      |                 ^
+/home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/experimental/microfrontend/lib/window_util.c:47:46: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+   47 |     float float_value = 0.5 - (0.5 * cos(arg * (i + 0.5)));
+      |                                              ^
+/home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/experimental/microfrontend/lib/window_util.c:50:56: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+   50 |         floor(float_value * (1 << kFrontendWindowBits) + 0.5);
+      |                                                        ^
+[125/225] Building C object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/experimental/microfrontend/lib/log_scale.c.obj
+[126/225] Building C object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/experimental/microfrontend/lib/log_scale_util.c.obj
+[127/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/esp_nn/add.cc.obj
+[128/225] Building C object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/experimental/microfrontend/lib/noise_reduction_util.c.obj
+[129/225] Building C object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/experimental/microfrontend/lib/noise_reduction.c.obj
+[130/225] Building C object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/experimental/microfrontend/lib/pcan_gain_control.c.obj
+[131/225] Building C object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/experimental/microfrontend/lib/pcan_gain_control_util.c.obj
+[132/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/tflite_bridge/flatbuffer_conversions_bridge.cc.obj
+[133/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/memory_planner/linear_memory_planner.cc.obj
+[134/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/experimental/microfrontend/lib/kiss_fft_int16.cc.obj
+[135/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/arena_allocator/recording_single_arena_buffer_allocator.cc.obj
+[136/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/memory_planner/greedy_memory_planner.cc.obj
+[137/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/core/c/common.cc.obj
+[138/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/core/api/error_reporter.cc.obj
+[139/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/core/api/tensor_utils.cc.obj
+[140/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/kernels/kernel_util.cc.obj
+[141/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/esp_nn/mul.cc.obj
+[142/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/esp_nn/depthwise_conv.cc.obj
+[143/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/kernels/internal/common.cc.obj
+[144/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/kernels/internal/reference/comparisons.cc.obj
+[145/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/esp_nn/fully_connected.cc.obj
+[146/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/kernels/internal/portable_tensor_utils.cc.obj
+[147/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/kernels/internal/quantization_util.cc.obj
+[148/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/kernels/internal/tensor_utils.cc.obj
+[149/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/esp_nn/softmax.cc.obj
+[150/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/kernels/internal/tensor_ctypes.cc.obj
+[151/225] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/command_responder.cc.obj
+[152/225] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/audio_provider.cc.obj
+In file included from /home/lee/work/CP/snore-recognition/main/audio_provider.cc:29:
+/home/lee/work/CP/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:6:2: warning: #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead [-Wcpp]
+    6 | #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead
+      |  ^~~~~~~
+[153/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/kernels/esp_nn/pooling.cc.obj
+[154/225] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/recognize_commands.cc.obj
+[155/225] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/feature_provider.cc.obj
+[156/225] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main.cc.obj
+[157/225] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/micro_features_generator.cc.obj
+[158/225] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/micro_model_settings.cc.obj
+[159/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/arena_allocator/persistent_arena_buffer_allocator.cc.obj
+[160/225] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/data_sender.cc.obj
+[161/225] Building C object esp-idf/bus/CMakeFiles/__idf_bus.dir/i2s_lcd_esp32_driver.c.obj
+[162/225] Building C object esp-idf/bus/CMakeFiles/__idf_bus.dir/i2s_lcd_esp32s2_driver.c.obj
+[163/225] Building C object esp-idf/bus/CMakeFiles/__idf_bus.dir/spi_bus.c.obj
+[164/225] Building C object esp-idf/bus/CMakeFiles/__idf_bus.dir/i2c_bus.c.obj
+[165/225] Building C object esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/conversions/yuv.c.obj
+[166/225] Linking C static library esp-idf/bus/libbus.a
+[167/225] Building CXX object esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/conversions/to_jpg.cpp.obj
+[168/225] Building C object esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/conversions/to_bmp.c.obj
+[169/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/arena_allocator/single_arena_buffer_allocator.cc.obj
+[170/225] Building C object esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/driver/esp_camera.c.obj
+[171/225] Building C object esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/conversions/esp_jpg_decode.c.obj
+[172/225] Building CXX object esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/conversions/jpge.cpp.obj
+[173/225] Building C object esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/driver/sccb.c.obj
+[174/225] Building C object esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/driver/sensor.c.obj
+[175/225] Building C object esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/driver/cam_hal.c.obj
+[176/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/kernels/internal/reference/portable_tensor_utils.cc.obj
+[177/225] Building C object esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/sensors/ov2640.c.obj
+[178/225] Building C object esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/sensors/ov7725.c.obj
+[179/225] Building C object esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/sensors/ov3660.c.obj
+[180/225] Building C object esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/sensors/ov7670.c.obj
+[181/225] Building C object esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/sensors/ov5640.c.obj
+[182/225] Building C object esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/sensors/gc0308.c.obj
+[183/225] Building C object esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/sensors/bf3005.c.obj
+[184/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/micro/arena_allocator/non_persistent_arena_buffer_allocator.cc.obj
+[185/225] Building C object esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/sensors/bf20a6.c.obj
+[186/225] Building C object esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/sensors/nt99141.c.obj
+[187/225] Building C object esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/sensors/gc2145.c.obj
+[188/225] Building C object esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/sensors/gc032a.c.obj
+[189/225] Building C object esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/sensors/sc101iot.c.obj
+[190/225] Building C object esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/sensors/sc030iot.c.obj
+[191/225] Building C object esp-idf/fb_gfx/CMakeFiles/__idf_fb_gfx.dir/fb_gfx.c.obj
+[192/225] Building C object esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/sensors/sc031gs.c.obj
+[193/225] Building C object esp-idf/screen/CMakeFiles/__idf_screen.dir/controller_driver/ili9341/ili9341.c.obj
+In file included from /home/lee/work/CP/snore-recognition/components/bus/include/i2s_lcd_driver.h:17,
+                 from /home/lee/work/CP/snore-recognition/components/screen/interface_driver/scr_interface_driver.h:23,
+                 from /home/lee/work/CP/snore-recognition/components/screen/screen_driver.h:18,
+                 from /home/lee/work/CP/snore-recognition/components/screen/controller_driver/ili9341/ili9341.c:20:
+/home/lee/work/CP/esp/esp-idf/components/driver/deprecated/driver/i2s.h:27:2: warning: #warning "This set of I2S APIs has been deprecated, please include 'driver/i2s_std.h', 'driver/i2s_pdm.h' or 'driver/i2s_tdm.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress leagcy driver deprecated warning' option under 'I2S Configuration' menu in Kconfig" [-Wcpp]
+   27 | #warning "This set of I2S APIs has been deprecated, \
+      |  ^~~~~~~
+[194/225] Building C object esp-idf/screen/CMakeFiles/__idf_screen.dir/controller_driver/st7796/st7796.c.obj
+In file included from /home/lee/work/CP/snore-recognition/components/bus/include/i2s_lcd_driver.h:17,
+                 from /home/lee/work/CP/snore-recognition/components/screen/interface_driver/scr_interface_driver.h:23,
+                 from /home/lee/work/CP/snore-recognition/components/screen/screen_driver.h:18,
+                 from /home/lee/work/CP/snore-recognition/components/screen/controller_driver/st7796/st7796.c:20:
+/home/lee/work/CP/esp/esp-idf/components/driver/deprecated/driver/i2s.h:27:2: warning: #warning "This set of I2S APIs has been deprecated, please include 'driver/i2s_std.h', 'driver/i2s_pdm.h' or 'driver/i2s_tdm.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress leagcy driver deprecated warning' option under 'I2S Configuration' menu in Kconfig" [-Wcpp]
+   27 | #warning "This set of I2S APIs has been deprecated, \
+      |  ^~~~~~~
+[195/225] Building C object esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/target/esp32s3/ll_cam.c.obj
+[196/225] Building C object esp-idf/screen/CMakeFiles/__idf_screen.dir/controller_driver/st7789/st7789.c.obj
+In file included from /home/lee/work/CP/snore-recognition/components/bus/include/i2s_lcd_driver.h:17,
+                 from /home/lee/work/CP/snore-recognition/components/screen/interface_driver/scr_interface_driver.h:23,
+                 from /home/lee/work/CP/snore-recognition/components/screen/screen_driver.h:18,
+                 from /home/lee/work/CP/snore-recognition/components/screen/controller_driver/st7789/st7789.c:20:
+/home/lee/work/CP/esp/esp-idf/components/driver/deprecated/driver/i2s.h:27:2: warning: #warning "This set of I2S APIs has been deprecated, please include 'driver/i2s_std.h', 'driver/i2s_pdm.h' or 'driver/i2s_tdm.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress leagcy driver deprecated warning' option under 'I2S Configuration' menu in Kconfig" [-Wcpp]
+   27 | #warning "This set of I2S APIs has been deprecated, \
+      |  ^~~~~~~
+[197/225] Linking C static library esp-idf/esp32-camera/libesp32-camera.a
+[198/225] Linking C static library esp-idf/fb_gfx/libfb_gfx.a
+[199/225] Building C object esp-idf/screen/CMakeFiles/__idf_screen.dir/controller_driver/ili9806/ili9806.c.obj
+In file included from /home/lee/work/CP/snore-recognition/components/bus/include/i2s_lcd_driver.h:17,
+                 from /home/lee/work/CP/snore-recognition/components/screen/interface_driver/scr_interface_driver.h:23,
+                 from /home/lee/work/CP/snore-recognition/components/screen/screen_driver.h:18,
+                 from /home/lee/work/CP/snore-recognition/components/screen/controller_driver/ili9806/ili9806.c:20:
+/home/lee/work/CP/esp/esp-idf/components/driver/deprecated/driver/i2s.h:27:2: warning: #warning "This set of I2S APIs has been deprecated, please include 'driver/i2s_std.h', 'driver/i2s_pdm.h' or 'driver/i2s_tdm.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress leagcy driver deprecated warning' option under 'I2S Configuration' menu in Kconfig" [-Wcpp]
+   27 | #warning "This set of I2S APIs has been deprecated, \
+      |  ^~~~~~~
+[200/225] Building C object esp-idf/screen/CMakeFiles/__idf_screen.dir/controller_driver/ili9486/ili9486.c.obj
+In file included from /home/lee/work/CP/snore-recognition/components/bus/include/i2s_lcd_driver.h:17,
+                 from /home/lee/work/CP/snore-recognition/components/screen/interface_driver/scr_interface_driver.h:23,
+                 from /home/lee/work/CP/snore-recognition/components/screen/screen_driver.h:18,
+                 from /home/lee/work/CP/snore-recognition/components/screen/controller_driver/ili9486/ili9486.c:20:
+/home/lee/work/CP/esp/esp-idf/components/driver/deprecated/driver/i2s.h:27:2: warning: #warning "This set of I2S APIs has been deprecated, please include 'driver/i2s_std.h', 'driver/i2s_pdm.h' or 'driver/i2s_tdm.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress leagcy driver deprecated warning' option under 'I2S Configuration' menu in Kconfig" [-Wcpp]
+   27 | #warning "This set of I2S APIs has been deprecated, \
+      |  ^~~~~~~
+[201/225] Building C object esp-idf/screen/CMakeFiles/__idf_screen.dir/controller_driver/nt35510/nt35510.c.obj
+In file included from /home/lee/work/CP/snore-recognition/components/bus/include/i2s_lcd_driver.h:17,
+                 from /home/lee/work/CP/snore-recognition/components/screen/interface_driver/scr_interface_driver.h:23,
+                 from /home/lee/work/CP/snore-recognition/components/screen/screen_driver.h:18,
+                 from /home/lee/work/CP/snore-recognition/components/screen/controller_driver/nt35510/nt35510.c:20:
+/home/lee/work/CP/esp/esp-idf/components/driver/deprecated/driver/i2s.h:27:2: warning: #warning "This set of I2S APIs has been deprecated, please include 'driver/i2s_std.h', 'driver/i2s_pdm.h' or 'driver/i2s_tdm.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress leagcy driver deprecated warning' option under 'I2S Configuration' menu in Kconfig" [-Wcpp]
+   27 | #warning "This set of I2S APIs has been deprecated, \
+      |  ^~~~~~~
+[202/225] Building C object esp-idf/screen/CMakeFiles/__idf_screen.dir/controller_driver/ssd1351/ssd1351.c.obj
+In file included from /home/lee/work/CP/snore-recognition/components/bus/include/i2s_lcd_driver.h:17,
+                 from /home/lee/work/CP/snore-recognition/components/screen/interface_driver/scr_interface_driver.h:23,
+                 from /home/lee/work/CP/snore-recognition/components/screen/screen_driver.h:18,
+                 from /home/lee/work/CP/snore-recognition/components/screen/controller_driver/ssd1351/ssd1351.c:20:
+/home/lee/work/CP/esp/esp-idf/components/driver/deprecated/driver/i2s.h:27:2: warning: #warning "This set of I2S APIs has been deprecated, please include 'driver/i2s_std.h', 'driver/i2s_pdm.h' or 'driver/i2s_tdm.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress leagcy driver deprecated warning' option under 'I2S Configuration' menu in Kconfig" [-Wcpp]
+   27 | #warning "This set of I2S APIs has been deprecated, \
+      |  ^~~~~~~
+[203/225] Building C object esp-idf/screen/CMakeFiles/__idf_screen.dir/controller_driver/ili9488/ili9488.c.obj
+In file included from /home/lee/work/CP/snore-recognition/components/bus/include/i2s_lcd_driver.h:17,
+                 from /home/lee/work/CP/snore-recognition/components/screen/interface_driver/scr_interface_driver.h:23,
+                 from /home/lee/work/CP/snore-recognition/components/screen/screen_driver.h:18,
+                 from /home/lee/work/CP/snore-recognition/components/screen/controller_driver/ili9488/ili9488.c:20:
+/home/lee/work/CP/esp/esp-idf/components/driver/deprecated/driver/i2s.h:27:2: warning: #warning "This set of I2S APIs has been deprecated, please include 'driver/i2s_std.h', 'driver/i2s_pdm.h' or 'driver/i2s_tdm.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress leagcy driver deprecated warning' option under 'I2S Configuration' menu in Kconfig" [-Wcpp]
+   27 | #warning "This set of I2S APIs has been deprecated, \
+      |  ^~~~~~~
+[204/225] Building C object esp-idf/screen/CMakeFiles/__idf_screen.dir/controller_driver/ssd1306/ssd1306.c.obj
+In file included from /home/lee/work/CP/snore-recognition/components/bus/include/i2s_lcd_driver.h:17,
+                 from /home/lee/work/CP/snore-recognition/components/screen/interface_driver/scr_interface_driver.h:23,
+                 from /home/lee/work/CP/snore-recognition/components/screen/screen_driver.h:18,
+                 from /home/lee/work/CP/snore-recognition/components/screen/controller_driver/ssd1306/ssd1306.c:20:
+/home/lee/work/CP/esp/esp-idf/components/driver/deprecated/driver/i2s.h:27:2: warning: #warning "This set of I2S APIs has been deprecated, please include 'driver/i2s_std.h', 'driver/i2s_pdm.h' or 'driver/i2s_tdm.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress leagcy driver deprecated warning' option under 'I2S Configuration' menu in Kconfig" [-Wcpp]
+   27 | #warning "This set of I2S APIs has been deprecated, \
+      |  ^~~~~~~
+[205/225] Building C object esp-idf/screen/CMakeFiles/__idf_screen.dir/controller_driver/ssd1307/ssd1307.c.obj
+In file included from /home/lee/work/CP/snore-recognition/components/bus/include/i2s_lcd_driver.h:17,
+                 from /home/lee/work/CP/snore-recognition/components/screen/interface_driver/scr_interface_driver.h:23,
+                 from /home/lee/work/CP/snore-recognition/components/screen/screen_driver.h:18,
+                 from /home/lee/work/CP/snore-recognition/components/screen/controller_driver/ssd1307/ssd1307.c:20:
+/home/lee/work/CP/esp/esp-idf/components/driver/deprecated/driver/i2s.h:27:2: warning: #warning "This set of I2S APIs has been deprecated, please include 'driver/i2s_std.h', 'driver/i2s_pdm.h' or 'driver/i2s_tdm.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress leagcy driver deprecated warning' option under 'I2S Configuration' menu in Kconfig" [-Wcpp]
+   27 | #warning "This set of I2S APIs has been deprecated, \
+      |  ^~~~~~~
+[206/225] Building C object esp-idf/screen/CMakeFiles/__idf_screen.dir/controller_driver/ssd1322/ssd1322.c.obj
+In file included from /home/lee/work/CP/snore-recognition/components/bus/include/i2s_lcd_driver.h:17,
+                 from /home/lee/work/CP/snore-recognition/components/screen/interface_driver/scr_interface_driver.h:23,
+                 from /home/lee/work/CP/snore-recognition/components/screen/screen_driver.h:18,
+                 from /home/lee/work/CP/snore-recognition/components/screen/controller_driver/ssd1322/ssd1322.c:20:
+/home/lee/work/CP/esp/esp-idf/components/driver/deprecated/driver/i2s.h:27:2: warning: #warning "This set of I2S APIs has been deprecated, please include 'driver/i2s_std.h', 'driver/i2s_pdm.h' or 'driver/i2s_tdm.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress leagcy driver deprecated warning' option under 'I2S Configuration' menu in Kconfig" [-Wcpp]
+   27 | #warning "This set of I2S APIs has been deprecated, \
+      |  ^~~~~~~
+[207/225] Building C object esp-idf/screen/CMakeFiles/__idf_screen.dir/controller_driver/ssd1963/ssd1963.c.obj
+In file included from /home/lee/work/CP/snore-recognition/components/bus/include/i2s_lcd_driver.h:17,
+                 from /home/lee/work/CP/snore-recognition/components/screen/interface_driver/scr_interface_driver.h:23,
+                 from /home/lee/work/CP/snore-recognition/components/screen/screen_driver.h:18,
+                 from /home/lee/work/CP/snore-recognition/components/screen/controller_driver/ssd1963/ssd1963.c:20:
+/home/lee/work/CP/esp/esp-idf/components/driver/deprecated/driver/i2s.h:27:2: warning: #warning "This set of I2S APIs has been deprecated, please include 'driver/i2s_std.h', 'driver/i2s_pdm.h' or 'driver/i2s_tdm.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress leagcy driver deprecated warning' option under 'I2S Configuration' menu in Kconfig" [-Wcpp]
+   27 | #warning "This set of I2S APIs has been deprecated, \
+      |  ^~~~~~~
+[208/225] Building C object esp-idf/screen/CMakeFiles/__idf_screen.dir/screen_utility/screen_utility.c.obj
+In file included from /home/lee/work/CP/snore-recognition/components/bus/include/i2s_lcd_driver.h:17,
+                 from /home/lee/work/CP/snore-recognition/components/screen/interface_driver/scr_interface_driver.h:23,
+                 from /home/lee/work/CP/snore-recognition/components/screen/screen_driver.h:18,
+                 from /home/lee/work/CP/snore-recognition/components/screen/screen_utility/screen_utility.h:18,
+                 from /home/lee/work/CP/snore-recognition/components/screen/screen_utility/screen_utility.c:17:
+/home/lee/work/CP/esp/esp-idf/components/driver/deprecated/driver/i2s.h:27:2: warning: #warning "This set of I2S APIs has been deprecated, please include 'driver/i2s_std.h', 'driver/i2s_pdm.h' or 'driver/i2s_tdm.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress leagcy driver deprecated warning' option under 'I2S Configuration' menu in Kconfig" [-Wcpp]
+   27 | #warning "This set of I2S APIs has been deprecated, \
+      |  ^~~~~~~
+[209/225] Building C object esp-idf/screen/CMakeFiles/__idf_screen.dir/controller_driver/rm68120/rm68120.c.obj
+In file included from /home/lee/work/CP/snore-recognition/components/bus/include/i2s_lcd_driver.h:17,
+                 from /home/lee/work/CP/snore-recognition/components/screen/interface_driver/scr_interface_driver.h:23,
+                 from /home/lee/work/CP/snore-recognition/components/screen/screen_driver.h:18,
+                 from /home/lee/work/CP/snore-recognition/components/screen/controller_driver/rm68120/rm68120.c:20:
+/home/lee/work/CP/esp/esp-idf/components/driver/deprecated/driver/i2s.h:27:2: warning: #warning "This set of I2S APIs has been deprecated, please include 'driver/i2s_std.h', 'driver/i2s_pdm.h' or 'driver/i2s_tdm.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress leagcy driver deprecated warning' option under 'I2S Configuration' menu in Kconfig" [-Wcpp]
+   27 | #warning "This set of I2S APIs has been deprecated, \
+      |  ^~~~~~~
+[210/225] Building C object esp-idf/screen/CMakeFiles/__idf_screen.dir/screen_driver.c.obj
+In file included from /home/lee/work/CP/snore-recognition/components/bus/include/i2s_lcd_driver.h:17,
+                 from /home/lee/work/CP/snore-recognition/components/screen/interface_driver/scr_interface_driver.h:23,
+                 from /home/lee/work/CP/snore-recognition/components/screen/screen_driver.h:18,
+                 from /home/lee/work/CP/snore-recognition/components/screen/screen_driver.c:17:
+/home/lee/work/CP/esp/esp-idf/components/driver/deprecated/driver/i2s.h:27:2: warning: #warning "This set of I2S APIs has been deprecated, please include 'driver/i2s_std.h', 'driver/i2s_pdm.h' or 'driver/i2s_tdm.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress leagcy driver deprecated warning' option under 'I2S Configuration' menu in Kconfig" [-Wcpp]
+   27 | #warning "This set of I2S APIs has been deprecated, \
+      |  ^~~~~~~
+[211/225] Building C object esp-idf/screen/CMakeFiles/__idf_screen.dir/interface_driver/scr_interface_driver.c.obj
+In file included from /home/lee/work/CP/snore-recognition/components/bus/include/i2s_lcd_driver.h:17,
+                 from /home/lee/work/CP/snore-recognition/components/screen/interface_driver/scr_interface_driver.h:23,
+                 from /home/lee/work/CP/snore-recognition/components/screen/interface_driver/scr_interface_driver.c:21:
+/home/lee/work/CP/esp/esp-idf/components/driver/deprecated/driver/i2s.h:27:2: warning: #warning "This set of I2S APIs has been deprecated, please include 'driver/i2s_std.h', 'driver/i2s_pdm.h' or 'driver/i2s_tdm.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress leagcy driver deprecated warning' option under 'I2S Configuration' menu in Kconfig" [-Wcpp]
+   27 | #warning "This set of I2S APIs has been deprecated, \
+      |  ^~~~~~~
+[212/225] Linking C static library esp-idf/screen/libscreen.a
+[213/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/core/api/op_resolver.cc.obj
+[214/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/core/api/flatbuffer_conversions.cc.obj
+[215/225] Building CXX object esp-idf/tflite-lib/CMakeFiles/__idf_tflite-lib.dir/tensorflow/lite/schema/schema_utils.cc.obj
+[216/225] Linking C static library esp-idf/tflite-lib/libtflite-lib.a
+[217/225] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main_functions.cc.obj
+In file included from /home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/micro/tflite_bridge/flatbuffer_conversions_bridge.h:19,
+                 from /home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/micro/micro_allocator.h:26,
+                 from /home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/micro/micro_interpreter.h:26,
+                 from /home/lee/work/CP/snore-recognition/main/main_functions.cc:24:
+/home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/core/api/flatbuffer_conversions.h: In member function 'T* tflite::BuiltinDataAllocator::AllocatePOD()':
+/home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/core/api/flatbuffer_conversions.h:46:24: warning: 'template<class _Tp> struct std::is_pod' is deprecated: use is_standard_layout && is_trivial instead [-Wdeprecated-declarations]
+   46 |     static_assert(std::is_pod<T>::value, "Builtin data structure must be POD.");
+      |                        ^~~~~~
+In file included from /home/lee/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/xtensa-esp32s3-elf/include/c++/11.2.0/bits/move.h:57,
+                 from /home/lee/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/xtensa-esp32s3-elf/include/c++/11.2.0/bits/stl_pair.h:59,
+                 from /home/lee/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/xtensa-esp32s3-elf/include/c++/11.2.0/utility:70,
+                 from /home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/core/c/common.h:1208,
+                 from /home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/c/common.h:39,
+                 from /home/lee/work/CP/snore-recognition/main/audio_provider.h:19,
+                 from /home/lee/work/CP/snore-recognition/main/main_functions.cc:18:
+/home/lee/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/xtensa-esp32s3-elf/include/c++/11.2.0/type_traits:700:5: note: declared here
+  700 |     is_pod
+      |     ^~~~~~
+[218/225] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/model_98p.cc.obj
+[219/225] Linking C static library esp-idf/main/libmain.a
+[220/225] Generating ld/sections.ld
+[221/225] Building C object CMakeFiles/snore-recognition.elf.dir/project_elf_src_esp32s3.c.obj
+[222/225] Linking CXX executable snore-recognition.elf
+[223/225] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/lee/work/CP/snore-recognition/build/snore-recognition.bin
+[224/225] cd /home/lee/work/CP/snore-recognition/build/esp-idf/esptool_py && /home/lee/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/lee/work/CP/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/lee/work/CP/snore-recognition/build/partition_table/partition-table.bin /home/lee/work/CP/snore-recognition/build/snore-recognition.bin
+FAILED: esp-idf/esptool_py/CMakeFiles/app_check_size /home/lee/work/CP/snore-recognition/build/esp-idf/esptool_py/CMakeFiles/app_check_size 
+cd /home/lee/work/CP/snore-recognition/build/esp-idf/esptool_py && /home/lee/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/lee/work/CP/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/lee/work/CP/snore-recognition/build/partition_table/partition-table.bin /home/lee/work/CP/snore-recognition/build/snore-recognition.bin
+Error: app partition is too small for binary snore-recognition.bin size 0x233570:
+  - Part 'factory' 0/0 @ 0x10000 size 0x100000 (overflow 0x133570)
+ninja: build stopped: subcommand failed.

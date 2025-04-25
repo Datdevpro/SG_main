@@ -1,0 +1,22 @@
+{
+    "project_name":       "bootloader",
+    "project_path":       "/home/lee/work/CP/esp/esp-idf/components/bootloader/subproject",
+    "build_dir":          "/home/lee/work/CP/snore-recognition/build/bootloader",
+    "config_file":        "/home/lee/work/CP/snore-recognition/sdkconfig",
+    "config_defaults":    "",
+    "app_elf":            "bootloader.elf",
+    "app_bin":            "bootloader.bin",
+    "git_revision":       "v5.0",
+    "target":             "esp32s3",
+    "rev":                "",
+    "phy_data_partition": "",
+    "monitor_baud" :      "115200",
+    "monitor_toolprefix": "xtensa-esp32s3-elf-",
+    "config_environment" : {
+        "COMPONENT_KCONFIGS" : "/home/lee/work/CP/esp/esp-idf/components/efuse/Kconfig;/home/lee/work/CP/esp/esp-idf/components/esp_common/Kconfig;/home/lee/work/CP/esp/esp-idf/components/esp_hw_support/Kconfig;/home/lee/work/CP/esp/esp-idf/components/esp_system/Kconfig;/home/lee/work/CP/esp/esp-idf/components/freertos/Kconfig;/home/lee/work/CP/esp/esp-idf/components/hal/Kconfig;/home/lee/work/CP/esp/esp-idf/components/log/Kconfig;/home/lee/work/CP/esp/esp-idf/components/newlib/Kconfig;/home/lee/work/CP/esp/esp-idf/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "/home/lee/work/CP/esp/esp-idf/components/bootloader/Kconfig.projbuild;/home/lee/work/CP/esp/esp-idf/components/esp_app_format/Kconfig.projbuild;/home/lee/work/CP/esp/esp-idf/components/esp_rom/Kconfig.projbuild;/home/lee/work/CP/esp/esp-idf/components/esptool_py/Kconfig.projbuild;/home/lee/work/CP/esp/esp-idf/components/partition_table/Kconfig.projbuild"
+    },
+    "build_components" : [ "bootloader", "bootloader_support", "efuse", "esp_app_format", "esp_common", "esp_hw_support", "esp_rom", "esp_system", "esptool_py", "freertos", "hal", "log", "main", "micro-ecc", "newlib", "partition_table", "soc", "spi_flash", "xtensa", "" ],
+    "build_component_paths" : [ "/home/lee/work/CP/esp/esp-idf/components/bootloader", "/home/lee/work/CP/esp/esp-idf/components/bootloader_support", "/home/lee/work/CP/esp/esp-idf/components/efuse", "/home/lee/work/CP/esp/esp-idf/components/esp_app_format", "/home/lee/work/CP/esp/esp-idf/components/esp_common", "/home/lee/work/CP/esp/esp-idf/components/esp_hw_support", "/home/lee/work/CP/esp/esp-idf/components/esp_rom", "/home/lee/work/CP/esp/esp-idf/components/esp_system", "/home/lee/work/CP/esp/esp-idf/components/esptool_py", "/home/lee/work/CP/esp/esp-idf/components/freertos", "/home/lee/work/CP/esp/esp-idf/components/hal", "/home/lee/work/CP/esp/esp-idf/components/log", "/home/lee/work/CP/esp/esp-idf/components/bootloader/subproject/main", "/home/lee/work/CP/esp/esp-idf/components/bootloader/subproject/components/micro-ecc", "/home/lee/work/CP/esp/esp-idf/components/newlib", "/home/lee/work/CP/esp/esp-idf/components/partition_table", "/home/lee/work/CP/esp/esp-idf/components/soc", "/home/lee/work/CP/esp/esp-idf/components/spi_flash", "/home/lee/work/CP/esp/esp-idf/components/xtensa", "" ],
+    "debug_prefix_map_gdbinit": ""
+}
