@@ -1,8 +1,9 @@
 #ifndef UART_SEND_H
 #define UART_SEND_H
-#include <stdbool.h>
+#include "driver/uart.h"
 void uart_init(void);
-void uart_send_json(int id , bool snore_detected, float ahi);
-void uart_receive_response();
-void send_flag_start_time(bool flag_snore);
+void send_snore_json(int score) ;
+void send_continue_pumping_signal();
+void send_stop_pumping_signal();
+
 #endif

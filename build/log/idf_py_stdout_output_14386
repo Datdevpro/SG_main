@@ -1,0 +1,104 @@
+[0/1] Re-running CMake...
+-- Component directory /home/lee/work/CP/esp/esp-idf/components/esp_coex does not contain a CMakeLists.txt file. No component will be added
+-- Building ESP-IDF components for target esp32s3
+NOTICE: Processing 1 dependencies:
+NOTICE: [1/1] idf (5.0.0)
+-- Project sdkconfig file /home/lee/work/CP/snore-recognition/sdkconfig
+-- App "snore-recognition" version: 297c03c-dirty
+-- Adding linker script /home/lee/work/CP/snore-recognition/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/lee/work/CP/esp/esp-idf/components/esp_system/ld/esp32s3/sections.ld.in
+-- Adding linker script /home/lee/work/CP/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /home/lee/work/CP/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /home/lee/work/CP/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /home/lee/work/CP/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /home/lee/work/CP/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script /home/lee/work/CP/esp/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt bus cmock console cxx driver efuse esp-nn esp-tls esp32-camera esp_adc esp_app_format esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_netif esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs fb_gfx freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread screen sdmmc soc spi_flash spiffs tcp_transport tflite-lib touch_element ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/lee/work/CP/esp/esp-idf/components/app_trace /home/lee/work/CP/esp/esp-idf/components/app_update /home/lee/work/CP/esp/esp-idf/components/bootloader /home/lee/work/CP/esp/esp-idf/components/bootloader_support /home/lee/work/CP/esp/esp-idf/components/bt /home/lee/work/CP/snore-recognition/components/bus /home/lee/work/CP/esp/esp-idf/components/cmock /home/lee/work/CP/esp/esp-idf/components/console /home/lee/work/CP/esp/esp-idf/components/cxx /home/lee/work/CP/esp/esp-idf/components/driver /home/lee/work/CP/esp/esp-idf/components/efuse /home/lee/work/CP/snore-recognition/components/esp-nn /home/lee/work/CP/esp/esp-idf/components/esp-tls /home/lee/work/CP/snore-recognition/components/esp32-camera /home/lee/work/CP/esp/esp-idf/components/esp_adc /home/lee/work/CP/esp/esp-idf/components/esp_app_format /home/lee/work/CP/esp/esp-idf/components/esp_common /home/lee/work/CP/esp/esp-idf/components/esp_eth /home/lee/work/CP/esp/esp-idf/components/esp_event /home/lee/work/CP/esp/esp-idf/components/esp_gdbstub /home/lee/work/CP/esp/esp-idf/components/esp_hid /home/lee/work/CP/esp/esp-idf/components/esp_http_client /home/lee/work/CP/esp/esp-idf/components/esp_http_server /home/lee/work/CP/esp/esp-idf/components/esp_https_ota /home/lee/work/CP/esp/esp-idf/components/esp_https_server /home/lee/work/CP/esp/esp-idf/components/esp_hw_support /home/lee/work/CP/esp/esp-idf/components/esp_lcd /home/lee/work/CP/esp/esp-idf/components/esp_local_ctrl /home/lee/work/CP/esp/esp-idf/components/esp_netif /home/lee/work/CP/esp/esp-idf/components/esp_partition /home/lee/work/CP/esp/esp-idf/components/esp_phy /home/lee/work/CP/esp/esp-idf/components/esp_pm /home/lee/work/CP/esp/esp-idf/components/esp_psram /home/lee/work/CP/esp/esp-idf/components/esp_ringbuf /home/lee/work/CP/esp/esp-idf/components/esp_rom /home/lee/work/CP/esp/esp-idf/components/esp_system /home/lee/work/CP/esp/esp-idf/components/esp_timer /home/lee/work/CP/esp/esp-idf/components/esp_wifi /home/lee/work/CP/esp/esp-idf/components/espcoredump /home/lee/work/CP/esp/esp-idf/components/esptool_py /home/lee/work/CP/esp/esp-idf/components/fatfs /home/lee/work/CP/snore-recognition/components/fb_gfx /home/lee/work/CP/esp/esp-idf/components/freertos /home/lee/work/CP/esp/esp-idf/components/hal /home/lee/work/CP/esp/esp-idf/components/heap /home/lee/work/CP/esp/esp-idf/components/http_parser /home/lee/work/CP/esp/esp-idf/components/idf_test /home/lee/work/CP/esp/esp-idf/components/ieee802154 /home/lee/work/CP/esp/esp-idf/components/json /home/lee/work/CP/esp/esp-idf/components/log /home/lee/work/CP/esp/esp-idf/components/lwip /home/lee/work/CP/snore-recognition/main /home/lee/work/CP/esp/esp-idf/components/mbedtls /home/lee/work/CP/esp/esp-idf/components/mqtt /home/lee/work/CP/esp/esp-idf/components/newlib /home/lee/work/CP/esp/esp-idf/components/nvs_flash /home/lee/work/CP/esp/esp-idf/components/openthread /home/lee/work/CP/esp/esp-idf/components/partition_table /home/lee/work/CP/esp/esp-idf/components/perfmon /home/lee/work/CP/esp/esp-idf/components/protobuf-c /home/lee/work/CP/esp/esp-idf/components/protocomm /home/lee/work/CP/esp/esp-idf/components/pthread /home/lee/work/CP/snore-recognition/components/screen /home/lee/work/CP/esp/esp-idf/components/sdmmc /home/lee/work/CP/esp/esp-idf/components/soc /home/lee/work/CP/esp/esp-idf/components/spi_flash /home/lee/work/CP/esp/esp-idf/components/spiffs /home/lee/work/CP/esp/esp-idf/components/tcp_transport /home/lee/work/CP/snore-recognition/components/tflite-lib /home/lee/work/CP/esp/esp-idf/components/touch_element /home/lee/work/CP/esp/esp-idf/components/ulp /home/lee/work/CP/esp/esp-idf/components/unity /home/lee/work/CP/esp/esp-idf/components/usb /home/lee/work/CP/esp/esp-idf/components/vfs /home/lee/work/CP/esp/esp-idf/components/wear_levelling /home/lee/work/CP/esp/esp-idf/components/wifi_provisioning /home/lee/work/CP/esp/esp-idf/components/wpa_supplicant /home/lee/work/CP/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lee/work/CP/snore-recognition/build
+[1/18] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/micro_model_settings.cc.obj
+[2/18] Performing build step for 'bootloader'
+[1/1] cd /home/lee/work/CP/snore-recognition/build/bootloader/esp-idf/esptool_py && /home/lee/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/lee/work/CP/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/lee/work/CP/snore-recognition/build/bootloader/bootloader.bin
+Bootloader binary size 0x5150 bytes. 0x2eb0 bytes (36%) free.
+[3/16] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/data_sender.cc.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/data_sender.cc.obj 
+/home/lee/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-g++  -I/home/lee/work/CP/snore-recognition/build/config -I/home/lee/work/CP/esp/esp-idf/components/newlib/platform_include -I/home/lee/work/CP/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/lee/work/CP/esp/esp-idf/components/freertos/esp_additions/include/freertos -I/home/lee/work/CP/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/lee/work/CP/esp/esp-idf/components/freertos/esp_additions/include -I/home/lee/work/CP/esp/esp-idf/components/esp_hw_support/include -I/home/lee/work/CP/esp/esp-idf/components/esp_hw_support/include/soc -I/home/lee/work/CP/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/home/lee/work/CP/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/home/lee/work/CP/esp/esp-idf/components/esp_hw_support/port/esp32s3/private_include -I/home/lee/work/CP/esp/esp-idf/components/heap/include -I/home/lee/work/CP/esp/esp-idf/components/log/include -I/home/lee/work/CP/esp/esp-idf/components/soc/include -I/home/lee/work/CP/esp/esp-idf/components/soc/esp32s3/. -I/home/lee/work/CP/esp/esp-idf/components/soc/esp32s3/include -I/home/lee/work/CP/esp/esp-idf/components/hal/esp32s3/include -I/home/lee/work/CP/esp/esp-idf/components/hal/include -I/home/lee/work/CP/esp/esp-idf/components/hal/platform_port/include -I/home/lee/work/CP/esp/esp-idf/components/esp_rom/include -I/home/lee/work/CP/esp/esp-idf/components/esp_rom/include/esp32s3 -I/home/lee/work/CP/esp/esp-idf/components/esp_rom/esp32s3 -I/home/lee/work/CP/esp/esp-idf/components/esp_common/include -I/home/lee/work/CP/esp/esp-idf/components/esp_system/include -I/home/lee/work/CP/esp/esp-idf/components/esp_system/port/soc -I/home/lee/work/CP/esp/esp-idf/components/esp_system/port/include/private -I/home/lee/work/CP/esp/esp-idf/components/xtensa/include -I/home/lee/work/CP/esp/esp-idf/components/xtensa/esp32s3/include -I/home/lee/work/CP/esp/esp-idf/components/lwip/include -I/home/lee/work/CP/esp/esp-idf/components/lwip/include/apps -I/home/lee/work/CP/esp/esp-idf/components/lwip/include/apps/sntp -I/home/lee/work/CP/esp/esp-idf/components/lwip/lwip/src/include -I/home/lee/work/CP/esp/esp-idf/components/lwip/port/esp32/include -I/home/lee/work/CP/esp/esp-idf/components/lwip/port/esp32/include/arch -I/home/lee/work/CP/snore-recognition/components/tflite-lib -I/home/lee/work/CP/snore-recognition/components/tflite-lib/third_party/gemmlowp -I/home/lee/work/CP/snore-recognition/components/tflite-lib/third_party/flatbuffers/include -I/home/lee/work/CP/snore-recognition/components/tflite-lib/third_party/ruy -I/home/lee/work/CP/snore-recognition/components/tflite-lib/third_party/kissfft -I/home/lee/work/CP/esp/esp-idf/components/spi_flash/include -I/home/lee/work/CP/esp/esp-idf/components/driver/include -I/home/lee/work/CP/esp/esp-idf/components/driver/deprecated -I/home/lee/work/CP/esp/esp-idf/components/driver/esp32s3/include -I/home/lee/work/CP/esp/esp-idf/components/esp_pm/include -I/home/lee/work/CP/esp/esp-idf/components/esp_ringbuf/include -I/home/lee/work/CP/esp/esp-idf/components/esp_timer/include -I/home/lee/work/CP/esp/esp-idf/components/json/cJSON -mlongcalls  -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/home/lee/work/CP/snore-recognition=. -fmacro-prefix-map=/home/lee/work/CP/esp/esp-idf=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu++20 -fno-exceptions -fno-rtti -D_GNU_SOURCE -DIDF_VER=\"v5.0\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-error=sign-compare -Wno-error=double-promotion -Wno-type-limits -DTF_LITE_STATIC_MEMORY -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/data_sender.cc.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/data_sender.cc.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/data_sender.cc.obj -c /home/lee/work/CP/snore-recognition/main/data_sender.cc
+/home/lee/work/CP/snore-recognition/main/data_sender.cc:24:20: error: redefinition of 'const char* DEVICE_ID'
+   24 | static const char *DEVICE_ID = "esp32_001";
+      |                    ^~~~~~~~~
+In file included from /home/lee/work/CP/snore-recognition/main/data_sender.cc:1:
+/home/lee/work/CP/snore-recognition/main/data_sender.h:5:20: note: 'const char* DEVICE_ID' previously defined here
+    5 | static const char *DEVICE_ID = "esp32_001";
+      |                    ^~~~~~~~~
+/home/lee/work/CP/snore-recognition/main/data_sender.cc:25:13: error: redefinition of 'bool flag_snore'
+   25 | static bool flag_snore = false;
+      |             ^~~~~~~~~~
+In file included from /home/lee/work/CP/snore-recognition/main/data_sender.cc:1:
+/home/lee/work/CP/snore-recognition/main/data_sender.h:6:13: note: 'bool flag_snore' previously defined here
+    6 | static bool flag_snore = false;
+      |             ^~~~~~~~~~
+/home/lee/work/CP/snore-recognition/main/data_sender.cc:26:13: error: redefinition of 'bool wait_check'
+   26 | static bool wait_check = false;
+      |             ^~~~~~~~~~
+In file included from /home/lee/work/CP/snore-recognition/main/data_sender.cc:1:
+/home/lee/work/CP/snore-recognition/main/data_sender.h:7:13: note: 'bool wait_check' previously defined here
+    7 | static bool wait_check = false;
+      |             ^~~~~~~~~~
+/home/lee/work/CP/snore-recognition/main/data_sender.h:7:13: warning: 'wait_check' defined but not used [-Wunused-variable]
+/home/lee/work/CP/snore-recognition/main/data_sender.h:6:13: warning: 'flag_snore' defined but not used [-Wunused-variable]
+    6 | static bool flag_snore = false;
+      |             ^~~~~~~~~~
+[4/16] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/recognize_commands.cc.obj
+[5/16] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/command_responder.cc.obj
+In file included from /home/lee/work/CP/snore-recognition/main/command_responder.cc:18:
+/home/lee/work/CP/snore-recognition/main/data_sender.h:7:13: warning: 'wait_check' defined but not used [-Wunused-variable]
+    7 | static bool wait_check = false;
+      |             ^~~~~~~~~~
+/home/lee/work/CP/snore-recognition/main/data_sender.h:6:13: warning: 'flag_snore' defined but not used [-Wunused-variable]
+    6 | static bool flag_snore = false;
+      |             ^~~~~~~~~~
+/home/lee/work/CP/snore-recognition/main/data_sender.h:5:20: warning: 'DEVICE_ID' defined but not used [-Wunused-variable]
+    5 | static const char *DEVICE_ID = "esp32_001";
+      |                    ^~~~~~~~~
+[6/16] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main.cc.obj
+[7/16] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/audio_provider.cc.obj
+In file included from /home/lee/work/CP/snore-recognition/main/audio_provider.cc:29:
+/home/lee/work/CP/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:6:2: warning: #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead [-Wcpp]
+    6 | #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead
+      |  ^~~~~~~
+[8/16] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/feature_provider.cc.obj
+[9/16] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/micro_features_generator.cc.obj
+[10/16] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/model.cc.obj
+[11/16] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main_functions.cc.obj
+In file included from /home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/micro/tflite_bridge/flatbuffer_conversions_bridge.h:19,
+                 from /home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/micro/micro_allocator.h:26,
+                 from /home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/micro/micro_interpreter.h:26,
+                 from /home/lee/work/CP/snore-recognition/main/main_functions.cc:24:
+/home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/core/api/flatbuffer_conversions.h: In member function 'T* tflite::BuiltinDataAllocator::AllocatePOD()':
+/home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/core/api/flatbuffer_conversions.h:46:24: warning: 'template<class _Tp> struct std::is_pod' is deprecated: use is_standard_layout && is_trivial instead [-Wdeprecated-declarations]
+   46 |     static_assert(std::is_pod<T>::value, "Builtin data structure must be POD.");
+      |                        ^~~~~~
+In file included from /home/lee/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/xtensa-esp32s3-elf/include/c++/11.2.0/bits/move.h:57,
+                 from /home/lee/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/xtensa-esp32s3-elf/include/c++/11.2.0/bits/stl_pair.h:59,
+                 from /home/lee/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/xtensa-esp32s3-elf/include/c++/11.2.0/utility:70,
+                 from /home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/core/c/common.h:1208,
+                 from /home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/c/common.h:39,
+                 from /home/lee/work/CP/snore-recognition/main/audio_provider.h:19,
+                 from /home/lee/work/CP/snore-recognition/main/main_functions.cc:18:
+/home/lee/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/xtensa-esp32s3-elf/include/c++/11.2.0/type_traits:700:5: note: declared here
+  700 |     is_pod
+      |     ^~~~~~
+In file included from /home/lee/work/CP/snore-recognition/main/main_functions.cc:17:
+/home/lee/work/CP/snore-recognition/main/data_sender.h: At global scope:
+/home/lee/work/CP/snore-recognition/main/data_sender.h:7:13: warning: 'wait_check' defined but not used [-Wunused-variable]
+    7 | static bool wait_check = false;
+      |             ^~~~~~~~~~
+/home/lee/work/CP/snore-recognition/main/data_sender.h:6:13: warning: 'flag_snore' defined but not used [-Wunused-variable]
+    6 | static bool flag_snore = false;
+      |             ^~~~~~~~~~
+/home/lee/work/CP/snore-recognition/main/data_sender.h:5:20: warning: 'DEVICE_ID' defined but not used [-Wunused-variable]
+    5 | static const char *DEVICE_ID = "esp32_001";
+      |                    ^~~~~~~~~
+ninja: build stopped: subcommand failed.

@@ -1,57 +1,68 @@
-/* Copyright 2019 The TensorFlow Authors. All Rights Reserved.
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-==============================================================================*/
 
 #include "command_responder.h"
 #include "tensorflow/lite/micro/micro_log.h"
 #include "data_sender.h"
 #include "esp_timer.h"
-
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include <string.h>
 // The default implementation writes out the name of the recognized command
 // to the error console. Real applications will want to take some custom
 // action instead, and should implement their own versions of this function.
 
 uint64_t millis() {   // add deplay 2s when detected snoring for 
                       //prevent multiple event in a few seconds
-  return esp_timer_get_time() / 2000;
+  return esp_timer_get_time() / 1000;
 }
+
+
+static bool snore_detected = false; 
+static unsigned last_snore_time = 0; // Timestamp of the last snore detection
+bool waiting_for_second_snore = false;
+static unsigned wait_snore_start_time = 0;
+
+
 
 void RespondToCommand(int32_t current_time, const char* found_command,
                       int16_t score, bool is_new_command) {
-  // static unsigned long lastcommandtime = 0;
-  // if (is_new_command && (millis() - lastcommandtime > 2000)) {
-  //   lastcommandtime = millis();
-
-  //   MicroPrintf("Heard %s (%d) at %dms", found_command, score, current_time);
-  //   uart_send_json(1, found_command, score/15);
-  //   uart_receive_response();
-  // }
-  //if ( is_new_command && score > 128)
-  if (score > 128)
-  {
-      MicroPrintf("Heard %s (%d) at %dms", found_command, score, current_time);
-      //uart_send_json(1, found_command, score/15);
-      send_flag_start_time(true);
-      uart_receive_response();
+      
+  // Check if the detected command is "snore" and it's a new command 
+  // here is the start of snoring detection period
+  if (is_new_command && strcmp(found_command, "snoring" ) == 0 && !snore_detected) {
+    if (!snore_detected || (millis() - last_snore_time > 20000)) {
+      MicroPrintf("Heard %s (%d) @%dms", found_command, score, current_time);
+      send_snore_json(score);
+      MicroPrintf("sent data");
+      snore_detected = true;
+      last_snore_time = millis();
+      MicroPrintf("Go to count down");
     }
-
-   else {
-      //is_new_command = false; 
-      send_flag_start_time(false); // then pack the json
-      uart_receive_response();
+  }
+  
+  // After 20 seconds, check if snore is still detected
+  if (snore_detected && (millis() - last_snore_time > 20000)) {
+    if (!waiting_for_second_snore) {
+      // Start the 3-second waiting window
+      wait_snore_start_time = millis();
+      waiting_for_second_snore = true;
+      MicroPrintf("Waiting 3 seconds for another snore...");
+    } else {
+      // In 3-second window now
+      if ((millis() - wait_snore_start_time) <= 5000) {
+        if (is_new_command ) {
+          MicroPrintf("Snore detected within 3 seconds, continue pumping.");
+          send_continue_pumping_signal();
+          last_snore_time = millis();  // Reset timer
+          waiting_for_second_snore = false;
+        }
+      } else {
+        // 3 seconds passed, no new snore
+        MicroPrintf("No snore in 3 seconds, stop pumping.");
+        send_stop_pumping_signal();
+        snore_detected = false;
+        waiting_for_second_snore = false;
+      }
     }
-  
-  
-
+  }
 }
+  

@@ -1,0 +1,9 @@
+[0/1] Re-running CMake...
+-- Component directory /home/lee/work/CP/esp/esp-idf/components/esp_coex does not contain a CMakeLists.txt file. No component will be added
+-- Building ESP-IDF components for target esp32s3
+NOTICE: Processing 1 dependencies:
+NOTICE: [1/1] idf (5.0.0)
+-- Configuring incomplete, errors occurred!
+See also "/home/lee/work/CP/snore-recognition/build/CMakeFiles/CMakeOutput.log".
+FAILED: build.ninja 
+/usr/bin/cmake --regenerate-during-build -S/home/lee/work/CP/snore-recognition -B/home/lee/work/CP/snore-recognition/build

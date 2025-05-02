@@ -1,0 +1,10 @@
+CMake Error at /home/lee/work/CP/esp/esp-idf/tools/cmake/build.cmake:245 (message):
+  Failed to resolve component 'cJSON'.
+Call Stack (most recent call first):
+  /home/lee/work/CP/esp/esp-idf/tools/cmake/build.cmake:287 (__build_resolve_and_add_req)
+  /home/lee/work/CP/esp/esp-idf/tools/cmake/build.cmake:574 (__build_expand_requirements)
+  /home/lee/work/CP/esp/esp-idf/tools/cmake/project.cmake:440 (idf_build_process)
+  CMakeLists.txt:4 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

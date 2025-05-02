@@ -1,0 +1,39 @@
+CMake Error at /home/lee/work/CP/esp/esp-idf/tools/cmake/component.cmake:224 (message):
+  CMake Warning (dev) at build_properties.temp.cmake:8:
+
+    Syntax Warning in cmake code at column 51
+
+  
+
+    Argument not separated from preceding token by whitespace.
+
+  Call Stack (most recent call first):
+
+    /home/lee/work/CP/esp/esp-idf/tools/cmake/scripts/component_get_requirements.cmake:3 (include)
+
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  
+
+  CMake Error at
+  /home/lee/work/CP/snore-recognition/components/cJSON/CMakeLists.txt:4
+  (project):
+
+    project command is not scriptable
+
+  Call Stack (most recent call first):
+
+    /home/lee/work/CP/esp/esp-idf/tools/cmake/scripts/component_get_requirements.cmake:106 (include)
+    /home/lee/work/CP/esp/esp-idf/tools/cmake/scripts/component_get_requirements.cmake:124 (__component_get_requirements)
+
+  
+
+  
+
+Call Stack (most recent call first):
+  /home/lee/work/CP/esp/esp-idf/tools/cmake/build.cmake:553 (__component_get_requirements)
+  /home/lee/work/CP/esp/esp-idf/tools/cmake/project.cmake:440 (idf_build_process)
+  CMakeLists.txt:4 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

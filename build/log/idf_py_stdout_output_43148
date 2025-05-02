@@ -1,0 +1,70 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/lee/work/CP/snore-recognition/build/bootloader/esp-idf/esptool_py && /home/lee/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/lee/work/CP/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/lee/work/CP/snore-recognition/build/bootloader/bootloader.bin
+Bootloader binary size 0x5150 bytes. 0x2eb0 bytes (36%) free.
+[2/8] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/data_sender.cc.obj
+[3/8] Linking C static library esp-idf/main/libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable snore-recognition.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/lee/work/CP/snore-recognition/build/snore-recognition.bin
+[7/8] cd /home/lee/work/CP/snore-recognition/build/esp-idf/esptool_py && /home/lee/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/lee/work/CP/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/lee/work/CP/snore-recognition/build/partition_table/partition-table.bin /home/lee/work/CP/snore-recognition/build/snore-recognition.bin
+snore-recognition.bin binary size 0x7ec80 bytes. Smallest app partition is 0x177000 bytes. 0xf8380 bytes (66%) free.
+[7/8] cd /home/lee/work/CP/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/lee/work/CP/esp/esp-idf -D "SERIAL_TOOL=/home/lee/.espressif/python_env/idf5.0_py3.10_env/bin/python;;/home/lee/work/CP/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/lee/work/CP/snore-recognition/build -P /home/lee/work/CP/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 8MB 0x0 bootloader/bootloader.bin 0x10000 snore-recognition.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port /dev/ttyACM0
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: 30:30:f9:53:aa:20
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x0008efff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 20816 bytes to 13273...
+Writing at 0x00000000... (100 %)
+Wrote 20816 bytes (13273 compressed) at 0x00000000 in 0.3 seconds (effective 521.3 kbit/s)...
+Hash of data verified.
+Compressed 519296 bytes to 361745...
+Writing at 0x00010000... (4 %)
+Writing at 0x00017d61... (8 %)
+Writing at 0x0001bdeb... (13 %)
+Writing at 0x0001ffa8... (17 %)
+Writing at 0x00024129... (21 %)
+Writing at 0x00028302... (26 %)
+Writing at 0x0002c4fc... (30 %)
+Writing at 0x00030945... (34 %)
+Writing at 0x00034d16... (39 %)
+Writing at 0x000390f8... (43 %)
+Writing at 0x0003d874... (47 %)
+Writing at 0x0004a4ea... (52 %)
+Writing at 0x00050b36... (56 %)
+Writing at 0x00056c41... (60 %)
+Writing at 0x0005c342... (65 %)
+Writing at 0x00061403... (69 %)
+Writing at 0x000665a8... (73 %)
+Writing at 0x0006b510... (78 %)
+Writing at 0x00071c02... (82 %)
+Writing at 0x000775b4... (86 %)
+Writing at 0x00080dd8... (91 %)
+Writing at 0x00088135... (95 %)
+Writing at 0x0008e3b8... (100 %)
+Wrote 519296 bytes (361745 compressed) at 0x00010000 in 4.0 seconds (effective 1050.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.0 seconds (effective 614.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

@@ -1,0 +1,18 @@
+[1/5] cd /home/lee/work/CP/snore-recognition/build/esp-idf/esptool_py && /home/lee/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/lee/work/CP/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/lee/work/CP/snore-recognition/build/partition_table/partition-table.bin /home/lee/work/CP/snore-recognition/build/snore-recognition.bin
+snore-recognition.bin binary size 0x7ec80 bytes. Smallest app partition is 0x177000 bytes. 0xf8380 bytes (66%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/lee/work/CP/snore-recognition/build/bootloader/esp-idf/esptool_py && /home/lee/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/lee/work/CP/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/lee/work/CP/snore-recognition/build/bootloader/bootloader.bin
+Bootloader binary size 0x5150 bytes. 0x2eb0 bytes (36%) free.
+[2/3] cd /home/lee/work/CP/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/lee/work/CP/esp/esp-idf -D "SERIAL_TOOL=/home/lee/.espressif/python_env/idf5.0_py3.10_env/bin/python;;/home/lee/work/CP/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/lee/work/CP/snore-recognition/build -P /home/lee/work/CP/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 8MB 0x0 bootloader/bootloader.bin 0x10000 snore-recognition.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port /dev/ttyACM0
+
+A fatal error occurred: Could not open /dev/ttyACM0, the port is busy or doesn't exist.
+([Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0')
+
+Hint: Check if the port is correct and ESP connected
+
+FAILED: CMakeFiles/flash /home/lee/work/CP/snore-recognition/build/CMakeFiles/flash 
+cd /home/lee/work/CP/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/lee/work/CP/esp/esp-idf -D "SERIAL_TOOL=/home/lee/.espressif/python_env/idf5.0_py3.10_env/bin/python;;/home/lee/work/CP/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/lee/work/CP/snore-recognition/build -P /home/lee/work/CP/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+ninja: build stopped: subcommand failed.
