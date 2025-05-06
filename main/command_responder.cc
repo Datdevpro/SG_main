@@ -31,11 +31,11 @@ void RespondToCommand(int32_t current_time, const char* found_command,
   if (is_new_command && strcmp(found_command, "snoring" ) == 0 && !snore_detected) {
     if (!snore_detected || (millis() - last_snore_time > 20000)) {
       MicroPrintf("Heard %s (%d) @%dms", found_command, score, current_time);
-      send_snore_json(score);
+      send_snore_json(score, 1);
       MicroPrintf("sent data");
       snore_detected = true;
       last_snore_time = millis();
-      MicroPrintf("Go to count down");
+      MicroPrintf("Go to count down and Start Pumping");
     }
   }
   
