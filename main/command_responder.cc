@@ -28,7 +28,7 @@ void RespondToCommand(int32_t current_time, const char* found_command,
       
   // Check if the detected command is "snore" and it's a new command 
   // here is the start of snoring detection period
-  if (is_new_command && strcmp(found_command, "snoring" ) == 0 && !snore_detected) {
+  if (is_new_command  && !snore_detected) {
     if (!snore_detected || (millis() - last_snore_time > 20000)) {
       MicroPrintf("Heard %s (%d) @%dms", found_command, score, current_time);
       send_snore_json(score, 1);

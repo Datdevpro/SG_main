@@ -1,0 +1,89 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cd /home/lee/work/CP/snore-recognition/build/bootloader/esp-idf/esptool_py && /home/lee/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/lee/work/CP/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/lee/work/CP/snore-recognition/build/bootloader/bootloader.bin
+Bootloader binary size 0x5150 bytes. 0x2eb0 bytes (36%) free.
+[2/9] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/recognize_commands.cc.obj
+[3/9] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main_functions.cc.obj
+In file included from /home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/micro/tflite_bridge/flatbuffer_conversions_bridge.h:19,
+                 from /home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/micro/micro_allocator.h:26,
+                 from /home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/micro/micro_interpreter.h:26,
+                 from /home/lee/work/CP/snore-recognition/main/main_functions.cc:24:
+/home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/core/api/flatbuffer_conversions.h: In member function 'T* tflite::BuiltinDataAllocator::AllocatePOD()':
+/home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/core/api/flatbuffer_conversions.h:46:24: warning: 'template<class _Tp> struct std::is_pod' is deprecated: use is_standard_layout && is_trivial instead [-Wdeprecated-declarations]
+   46 |     static_assert(std::is_pod<T>::value, "Builtin data structure must be POD.");
+      |                        ^~~~~~
+In file included from /home/lee/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/xtensa-esp32s3-elf/include/c++/11.2.0/bits/move.h:57,
+                 from /home/lee/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/xtensa-esp32s3-elf/include/c++/11.2.0/bits/stl_pair.h:59,
+                 from /home/lee/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/xtensa-esp32s3-elf/include/c++/11.2.0/utility:70,
+                 from /home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/core/c/common.h:1208,
+                 from /home/lee/work/CP/snore-recognition/components/tflite-lib/tensorflow/lite/c/common.h:39,
+                 from /home/lee/work/CP/snore-recognition/main/audio_provider.h:19,
+                 from /home/lee/work/CP/snore-recognition/main/main_functions.cc:18:
+/home/lee/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/xtensa-esp32s3-elf/include/c++/11.2.0/type_traits:700:5: note: declared here
+  700 |     is_pod
+      |     ^~~~~~
+[4/9] Linking C static library esp-idf/main/libmain.a
+[5/9] Generating ld/sections.ld
+[6/9] Linking CXX executable snore-recognition.elf
+[7/9] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/lee/work/CP/snore-recognition/build/snore-recognition.bin
+[8/9] cd /home/lee/work/CP/snore-recognition/build/esp-idf/esptool_py && /home/lee/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/lee/work/CP/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/lee/work/CP/snore-recognition/build/partition_table/partition-table.bin /home/lee/work/CP/snore-recognition/build/snore-recognition.bin
+snore-recognition.bin binary size 0x7ed40 bytes. Smallest app partition is 0x177000 bytes. 0xf82c0 bytes (66%) free.
+[8/9] cd /home/lee/work/CP/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/lee/work/CP/esp/esp-idf -D "SERIAL_TOOL=/home/lee/.espressif/python_env/idf5.0_py3.10_env/bin/python;;/home/lee/work/CP/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/lee/work/CP/snore-recognition/build -P /home/lee/work/CP/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x0 bootloader/bootloader.bin 0x10000 snore-recognition.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port /dev/ttyACM0
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: d8:3b:da:6d:0f:fc
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x0008efff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 20816 bytes to 13275...
+Writing at 0x00000000... (100 %)
+Wrote 20816 bytes (13275 compressed) at 0x00000000 in 0.4 seconds (effective 473.8 kbit/s)...
+Hash of data verified.
+Compressed 519488 bytes to 361848...
+Writing at 0x00010000... (4 %)
+Writing at 0x00017d60... (8 %)
+Writing at 0x0001bde9... (13 %)
+Writing at 0x0001ffa6... (17 %)
+Writing at 0x00024128... (21 %)
+Writing at 0x000282ff... (26 %)
+Writing at 0x0002c4f9... (30 %)
+Writing at 0x00030942... (34 %)
+Writing at 0x00034d13... (39 %)
+Writing at 0x000390f5... (43 %)
+Writing at 0x0003d862... (47 %)
+Writing at 0x0004a4bf... (52 %)
+Writing at 0x00050b72... (56 %)
+Writing at 0x00056c5e... (60 %)
+Writing at 0x0005c350... (65 %)
+Writing at 0x00061416... (69 %)
+Writing at 0x000665c3... (73 %)
+Writing at 0x0006b538... (78 %)
+Writing at 0x00071c2a... (82 %)
+Writing at 0x000775e6... (86 %)
+Writing at 0x00080df9... (91 %)
+Writing at 0x0008814f... (95 %)
+Writing at 0x0008e375... (100 %)
+Wrote 519488 bytes (361848 compressed) at 0x00010000 in 4.1 seconds (effective 1021.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.0 seconds (effective 586.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

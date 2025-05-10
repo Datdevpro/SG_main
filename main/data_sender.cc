@@ -22,7 +22,7 @@
 #define RXD_PIN   44
 //#define BUF_SIZE   1024
 
-static const char *DEVICE_ID = "esp32_001";
+//static const char *DEVICE_ID = "esp32_001";
 //static bool flag_snore = false;
 //static bool wait_check = false;
 
@@ -44,7 +44,7 @@ void uart_init() {
 void send_snore_json(int score, int position) {
     // Send device_id and score as plain text, separated by a comma
     char buffer[64];
-    snprintf(buffer, sizeof(buffer), "%s,%d,%d", DEVICE_ID, score, position);
+    snprintf(buffer, sizeof(buffer), "%d,%d", score, position);
     MicroPrintf("Sending Data: %s\n", buffer);
     uart_write_bytes(UART_PORT, buffer, strlen(buffer));
     uart_write_bytes(UART_PORT, "\n", 1); // Send newline as a delimiter

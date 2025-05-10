@@ -18,6 +18,9 @@
 #include "SerialLogger.h"
 #include "iot_configs.h"
 
+#include <ArduinoJson.h> // Thư viện JSON
+#include <HardwareSerial.h> // Để dùng Serial2
+
 // FreeRTOS Configuration
 #define WIFI_TASK_STACK_SIZE      3072
 #define MQTT_TASK_STACK_SIZE      3072
@@ -84,6 +87,8 @@ static unsigned long next_telemetry_send_time_ms = 0;
 static char telemetry_topic[128];
 static uint32_t telemetry_send_count = 0;
 static String telemetry_payload = "{}";
+int position ;
+StaticJsonDocument<512> jsonDoc;
 
 #define INCOMING_DATA_BUFFER_SIZE 128
 static char incoming_data[INCOMING_DATA_BUFFER_SIZE];
@@ -693,10 +698,11 @@ void uartTask(void* pvParameters) {
             Serial.println("Final JSON: " + finalJson);
   
             // Cờ báo JSON đã sẵn sàng
-            json_ready_to_send = true;
+            //json_ready_to_send = true;
   
             // Gửi dữ liệu ngay
             sendTelemetry(finalJson);
+            inflateAirPillow(position);
           } else {
             Serial.println("Invalid signal received.");
           }
@@ -724,6 +730,7 @@ void uartTask(void* pvParameters) {
           String scoreStr = receivedData.substring(firstComma + 1, secondComma);
           String positionStr = receivedData.substring(secondComma + 1);
           int score = scoreStr.toInt();
+        position = positionStr.toInt();
   
           jsonDoc.clear();
           jsonDoc["deviceId"] = device_id;
