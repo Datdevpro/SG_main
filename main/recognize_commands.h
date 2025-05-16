@@ -124,7 +124,7 @@ class RecognizeCommands {
   // initially being populated for example. The suppression argument disables
   // further recognitions for a set time after one has been triggered, which can
   // help reduce spurious recognitions.
-  explicit RecognizeCommands(uint8_t detection_threshold = 128);
+  explicit RecognizeCommands(uint8_t detection_threshold = 100);
 
   // Call this with the results of running a model on sample data.
   TfLiteStatus ProcessLatestResults(const TfLiteTensor* latest_results,
