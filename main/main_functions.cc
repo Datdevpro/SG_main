@@ -26,6 +26,7 @@ limitations under the License.
 #include "tensorflow/lite/micro/micro_mutable_op_resolver.h"
 #include "tensorflow/lite/micro/system_setup.h"
 #include "tensorflow/lite/schema/schema_generated.h"
+#include "flex_sensor.h"
 
 // Globals, used for compatibility with Arduino-style sketches.
 namespace {
@@ -142,6 +143,7 @@ void setup() {
   recognizer = &static_recognizer;
 
   previous_time = 0;
+  flex_sensor_init();
 }
 
 // The name of this function is important for Arduino compatibility.
@@ -189,5 +191,6 @@ void loop() {
   // Do something based on the recognized command. The default implementation
   // just prints to the error console, but you should replace this with your
   // own function for a real application.
+  int position = flex_sensor_check();
   RespondToCommand(current_time, found_command, score, is_new_command);
 }

@@ -1,0 +1,74 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/lee/work/CP/snore-recognition/build/bootloader/esp-idf/esptool_py && /home/lee/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/lee/work/CP/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/lee/work/CP/snore-recognition/build/bootloader/bootloader.bin
+Bootloader binary size 0x5150 bytes. 0x2eb0 bytes (36%) free.
+[2/8] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/flex_sensor.cc.obj
+In file included from /home/lee/work/CP/snore-recognition/main/flex_sensor.cc:2:
+/home/lee/work/CP/esp/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+[3/8] Linking C static library esp-idf/main/libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable snore-recognition.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/lee/work/CP/snore-recognition/build/snore-recognition.bin
+[7/8] cd /home/lee/work/CP/snore-recognition/build/esp-idf/esptool_py && /home/lee/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/lee/work/CP/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/lee/work/CP/snore-recognition/build/partition_table/partition-table.bin /home/lee/work/CP/snore-recognition/build/snore-recognition.bin
+snore-recognition.bin binary size 0x81e40 bytes. Smallest app partition is 0x177000 bytes. 0xf51c0 bytes (65%) free.
+[7/8] cd /home/lee/work/CP/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/lee/work/CP/esp/esp-idf -D "SERIAL_TOOL=/home/lee/.espressif/python_env/idf5.0_py3.10_env/bin/python;;/home/lee/work/CP/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/lee/work/CP/snore-recognition/build -P /home/lee/work/CP/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x0 bootloader/bootloader.bin 0x10000 snore-recognition.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port /dev/ttyACM0
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: d8:3b:da:70:61:38
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00091fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 20816 bytes to 13275...
+Writing at 0x00000000... (100 %)
+Wrote 20816 bytes (13275 compressed) at 0x00000000 in 0.4 seconds (effective 450.1 kbit/s)...
+Hash of data verified.
+Compressed 532032 bytes to 369542...
+Writing at 0x00010000... (4 %)
+Writing at 0x00017dec... (8 %)
+Writing at 0x0001beff... (13 %)
+Writing at 0x00020100... (17 %)
+Writing at 0x00024369... (21 %)
+Writing at 0x000285aa... (26 %)
+Writing at 0x0002c724... (30 %)
+Writing at 0x000308fa... (34 %)
+Writing at 0x00034a62... (39 %)
+Writing at 0x00038bfa... (43 %)
+Writing at 0x0003cd6c... (47 %)
+Writing at 0x00048364... (52 %)
+Writing at 0x00050ec4... (56 %)
+Writing at 0x00056ec3... (60 %)
+Writing at 0x0005c577... (65 %)
+Writing at 0x00061621... (69 %)
+Writing at 0x000667dd... (73 %)
+Writing at 0x0006b7dd... (78 %)
+Writing at 0x00071f85... (82 %)
+Writing at 0x00077c02... (86 %)
+Writing at 0x00080a61... (91 %)
+Writing at 0x00088733... (95 %)
+Writing at 0x0008e696... (100 %)
+Wrote 532032 bytes (369542 compressed) at 0x00010000 in 4.3 seconds (effective 995.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.0 seconds (effective 523.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

@@ -50,10 +50,9 @@ TfLiteStatus RecognizeCommands::ProcessLatestResults(
     buffer_index = 0;
   
   //Calculate the average score across the last 3 results.
-  uint8_t buffer_score = (scores_buffer[0] + scores_buffer[1]
-    + scores_buffer[2])/3;
+  uint8_t buffer_score = (scores_buffer[0] + scores_buffer[1] + scores_buffer[2])/3;
 
-  if (buffer_score > detection_threshold_) {
+  if (buffer_score >= detection_threshold_) {
     found = true;
     new_score = buffer_score;
   }

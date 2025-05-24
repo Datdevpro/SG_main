@@ -6,6 +6,7 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include <string.h>
+#include "flex_sensor.h"
 // The default implementation writes out the name of the recognized command
 // to the error console. Real applications will want to take some custom
 // action instead, and should implement their own versions of this function.
@@ -29,9 +30,14 @@ void RespondToCommand(int32_t current_time, const char* found_command,
   // Check if the detected command is "snore" and it's a new command 
   // here is the start of snoring detection period
   if (is_new_command  && !snore_detected) {
-    if (!snore_detected || (millis() - last_snore_time > 20000)) {
-      MicroPrintf("Heard %s (%d) @%dms", found_command, score, current_time);
-      send_snore_json(score, 1);
+    if (!snore_detected || (millis() - last_snore_time > 15000)) {
+      int position = flex_sensor_check();
+      if (position == -1) {
+        MicroPrintf("No flex sensor activated");
+        return;
+      }
+      MicroPrintf("Heard %s (%d) @%dms at position %d", found_command, score, current_time, position);
+      send_snore_json(score, position);
       MicroPrintf("sent data");
       snore_detected = true;
       last_snore_time = millis();
@@ -40,27 +46,29 @@ void RespondToCommand(int32_t current_time, const char* found_command,
   }
   
   // After 20 seconds, check if snore is still detected
-  if (snore_detected && (millis() - last_snore_time > 20000)) {
+  if (snore_detected && (millis() - last_snore_time > 15000)) {
     if (!waiting_for_second_snore) {
       // Start the 3-second waiting window
       wait_snore_start_time = millis();
       waiting_for_second_snore = true;
-      MicroPrintf("Waiting 3 seconds for another snore...");
+      MicroPrintf("Waiting 5 seconds for another snore...");
     } else {
       // In 3-second window now
       if ((millis() - wait_snore_start_time) <= 5000) {
         if (is_new_command ) {
-          MicroPrintf("Snore detected within 3 seconds, continue pumping.");
+          MicroPrintf("Snore detected within 5 seconds, continue pumping.");
           send_continue_pumping_signal();
           last_snore_time = millis();  // Reset timer
           waiting_for_second_snore = false;
+          MicroPrintf("Waiting for snore...");
         }
       } else {
         // 3 seconds passed, no new snore
-        MicroPrintf("No snore in 3 seconds, stop pumping.");
+        MicroPrintf("No snore in 5 seconds, stop pumping.");
         send_stop_pumping_signal();
         snore_detected = false;
         waiting_for_second_snore = false;
+        MicroPrintf("Waiting for snore...");
       }
     }
   }
