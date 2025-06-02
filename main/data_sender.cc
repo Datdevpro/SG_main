@@ -50,18 +50,26 @@ void send_snore_json(int score, int position) {
     uart_write_bytes(UART_PORT, "\n", 1); // Send newline as a delimiter
 }
 
-
-void send_continue_pumping_signal() {
-    uint8_t signal = 1; // 1 represents "true" (continue pumping)
-    uart_write_bytes(UART_PORT, (const char*)&signal, sizeof(signal));
-    MicroPrintf("signal sent is: %d", signal);
+void send_pumping_signal(int signal, int position) {
+    int packet[2];
+    packet[0] = signal;    // 1 for continue, 0 for stop
+    packet[1] = position;  // position info
+    uart_write_bytes(UART_PORT, (const char*)packet, sizeof(packet));
+    MicroPrintf("signal sent is: %d, position sent is: %d", packet[0], packet[1]);
 }
 
-void send_stop_pumping_signal() {
-    uint8_t signal = 0; // 0 represents "false" (stop pumping)
-    uart_write_bytes(UART_PORT, (const char*)&signal, sizeof(signal));
-    MicroPrintf("signal sent is: %d", signal);
-}
+
+// void send_continue_pumping_signal() {
+//     uint8_t signal = 1; // 1 represents "true" (continue pumping)
+//     uart_write_bytes(UART_PORT, (const char*)&signal, sizeof(signal));
+//     MicroPrintf("signal sent is: %d", signal);
+// }
+
+// void send_stop_pumping_signal() {
+//     uint8_t signal = 0; // 0 represents "false" (stop pumping)
+//     uart_write_bytes(UART_PORT, (const char*)&signal, sizeof(signal));
+//     MicroPrintf("signal sent is: %d", signal);
+// }
 
 
 

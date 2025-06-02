@@ -191,6 +191,10 @@ void loop() {
   // Do something based on the recognized command. The default implementation
   // just prints to the error console, but you should replace this with your
   // own function for a real application.
-  int position = flex_sensor_check();
+  //int position = flex_sensor_check();
+  //flex_sensor_check();
+  // if (score > 260) {
+  //   RespondToCommand(current_time, found_command, score, is_new_command);
+  // } 
   RespondToCommand(current_time, found_command, score, is_new_command);
 }

@@ -14,7 +14,7 @@ limitations under the License.
 ==============================================================================*/
 
 #include "recognize_commands.h"
-
+#include "tensorflow/lite/micro/micro_log.h"
 #include <limits>
 
 RecognizeCommands::RecognizeCommands(uint8_t detection_threshold)
@@ -52,9 +52,14 @@ TfLiteStatus RecognizeCommands::ProcessLatestResults(
   //Calculate the average score across the last 3 results.
   uint8_t buffer_score = (scores_buffer[0] + scores_buffer[1] + scores_buffer[2])/3;
 
+  MicroPrintf("score 1: %d, score 2: %d, score 3: %d, average: %d",
+                scores_buffer[0], scores_buffer[1], scores_buffer[2], buffer_score);
   if (buffer_score >= detection_threshold_) {
     found = true;
     new_score = buffer_score;
+    // MicroPrintf("score 1: %d, score 2: %d, score 3: %d, average: %d",
+    //             scores_buffer[0], scores_buffer[1], scores_buffer[2],
+    //             new_score);
   }
 
   *is_new_command = found;

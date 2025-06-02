@@ -3,7 +3,8 @@
 #include "driver/uart.h"
 void uart_init(void);
 void send_snore_json(int score, int position);
-void send_continue_pumping_signal();
-void send_stop_pumping_signal();
+// void send_continue_pumping_signal();
+// void send_stop_pumping_signal();
+void send_pumping_signal(int signal, int position);
 
 #endif
