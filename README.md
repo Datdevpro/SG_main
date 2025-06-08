@@ -36,13 +36,14 @@ cd python
 pip install -r requirements.txt
 python inference_model.py
 ```
-Key technology:
+---
+## Key technology:
+Using log-mel spectrogram to convert audio to image format in order to machine learning can extract the features of snoring
 ![The log mel spectrograms fed to the model](log_spec.jpg)
-Evaluation:
+*The log-mel spectrogram visualizer*  
 ![Evaluation result](evaluation_image.jpg)
-:--:
 *The model evaluation result* 
-
+---
 ## Deploy to ESP32
 
 To deploy tflite model onto ESP32-S3, please follow the bellow instruction
