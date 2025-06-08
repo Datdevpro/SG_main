@@ -44,7 +44,7 @@ Using log-mel spectrogram to convert audio to image format in order to machine l
 :--:
 *The log-mel spectrogram visualizer*  
 ![Evaluation result](evaluation_image.jpg)
-:--:
+
 *The model evaluation result*
 
 ---
