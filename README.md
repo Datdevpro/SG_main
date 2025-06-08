@@ -70,3 +70,5 @@ idf.py -p /dev/ttyACM0 flash monitor
 Heard snoring (<score>) at <time>
 ```
 The score varies from 0 to 255, with 128 being the detection threshold and 255 indicating 100% confidence.
+
+---
