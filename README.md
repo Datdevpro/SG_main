@@ -40,8 +40,10 @@ python inference_model.py
 ## Key technology:
 Using log-mel spectrogram to convert audio to image format in order to machine learning can extract the features of snoring
 ![The log mel spectrograms fed to the model](log_spec.jpg)
+:--:
 *The log-mel spectrogram visualizer*  
 ![Evaluation result](evaluation_image.jpg)
+:--:
 *The model evaluation result* 
 ---
 ## Deploy to ESP32
