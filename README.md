@@ -1,67 +1,60 @@
-This is the code for the modified version of the micro speech example code from Tensorflow lite. When uploaded to an ESP32 connnected to an 
-INMP441 microphone, it allows the microcontroller to recognize snoring sounds by continually listening to its surroundings and indicating
-when it has detected snoring on the TTY terminal.
+# 💤 Snore Guard - A Snoring detection integrated product with Tiny Machine Learning
 
-The model is 168 KB in size, and its inputs are spectrograms on the logarithmic and mel scale. The model is approximately run twice a second,
-and has an accuracy of 95% on the test data.
+A real-time snoring detection system using TinyML, optimized to run on microcontrollers (ESP32-S3). This project aims to support the detection of sleep apnea and other sleep-related health issues.
+------------------
+## 🎯 Project Goals
 
-![The log mel spectrograms fed to the model](log_mel_image.PNG)
+- Detect snoring sounds from microphone input  
+- Classify "Snoring" and "Non-Snoring" using a lightweight ML model  
+- Deploy the model directly on embedded devices (ESP32-S3)  
+- Display results and trigger alerts in real time  
+-------------------
+## 📦 Technologies & Hardware Used
+
+| Component         | Description                                     |
+|-------------------|-------------------------------------------------|
+| `ESP32-S3 N8R8`   | Main microcontroller with AI acceleration       |
+| `MAX9814`         | AGC analog microphone for clean audio capture   |
+| `Python`          | For data processing and model training          |
+| `TensorFlow Lite` | Convert model for embedded deployment           |
+|    `ESP-IDF`      | Programming and integration on ESP32            |
+
+--------------
+## 🧠 Model & Dataset
+
+- Two audio classes: `snoring` and `non-snoring`
+- Feature extraction: **Log-Mel Spectrograms**
+- Lightweight CNN model (158,468 parameters ~ 619 KB in size)
+- Accuracy: **> 90%**
+- Optimized with TensorFlow Lite for Microcontrollers
+
+---
+## 🚀 Installation & Run inference (on PC)
+
+```bash
+cd python
+pip install -r requirements.txt
+python inference_model.py
+```
+Key technology:
+![The log mel spectrograms fed to the model](log_spec.jpg)
+Evaluation:
+![Evaluation result](evaluation_image.jpg)
 :--:
-*Example of a snoring audio sample's log mel spectrogram fed to the model* 
-
-The datasets of audio samples used for training are made up of 500 snoring sounds, 500 non-snoring sounds, sourced from this work:
-T. H. Khan, "A deep learning model for snoring detection and vibration notification using a smart wearable gadget," Electronics,
-vol. 8, no. 9, article. 987, ISSN 2079-9292, 2019.
-
-The main files modified from the micro speech example by Tensorflow are in main/, and they are : audio_provider.cc, feature_provider.cc,
-recognize_commands.cc, and of course model.cc.
-
-![The model training result](Training.PNG)
-:--:
-*The model training result* 
+*The model evaluation result* 
 
 ## Deploy to ESP32
 
-The following instructions will help you build and deploy this sample
-to [ESP32](https://www.espressif.com/en/products/hardware/esp32/overview)
-devices using the [ESP IDF](https://github.com/espressif/esp-idf).
+To deploy tflite model onto ESP32-S3, please follow the bellow instruction
+(https://www.espressif.com/en/products/hardware/esp32/overview) or (https://github.com/espressif/esp-idf).
 
-Connect the SCK to pin 32, WS to pin 25 and SD to pin 33.
+Connect the microphone pin folowing: the SCK to pin 41, WS to pin 13 and SD to pin 47.
 
-### Building the example
-
-Set the chip target (IDF version `release/v5.0` is needed):
-
+### Building using ESP-IDF
 ```
-idf.py set-target esp32
-```
-
-Then build with `idf.py`
-```
+cd main
 idf.py build
-```
-### Usage
-
-All the main code is in the main folder
-
-### Load and run the example
-
-
-To flash (replace `/dev/ttyUSB0` with the device serial port):
-```
-idf.py --port /dev/ttyUSB0 flash
-```
-
-Monitor the serial output:
-```
-idf.py --port /dev/ttyUSB0 monitor
-```
-
-Use `Ctrl+]` to exit.
-
-The previous two commands can be combined:
-```
-idf.py --port /dev/ttyUSB0 flash monitor
+idf.py -p /dev/ttyACM0 flash monitor
 ```
 
 ### Sample output
