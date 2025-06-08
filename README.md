@@ -1,6 +1,7 @@
 # 💤 Snore Guard - A Snoring detection integrated product with Tiny Machine Learning
 
 A real-time snoring detection system using TinyML, optimized to run on microcontrollers (ESP32-S3). This project aims to support the detection of sleep apnea and other sleep-related health issues.
+
 ------------------
 ## 🎯 Project Goals
 
@@ -43,8 +44,9 @@ Using log-mel spectrogram to convert audio to image format in order to machine l
 :--:
 *The log-mel spectrogram visualizer*  
 ![Evaluation result](evaluation_image.jpg)
+:--:
+*The model evaluation result*
 
-*The model evaluation result* 
 ---
 ## Deploy to ESP32
 
